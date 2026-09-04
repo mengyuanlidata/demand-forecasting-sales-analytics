@@ -24,13 +24,6 @@ This analysis focuses on four key business questions:
 
 4. **Operational Exceptions:** Which products, regions, or periods require attention due to significant demand or forecast deviations?
 
-## Tools
-
-- Power BI
-- DAX
-- SQL
-- Excel
-
 ## Dashboard Preview
 
 ### 1. Executive Overview
@@ -62,3 +55,112 @@ This analysis focuses on four key business questions:
 - **Forecast accuracy varied across product categories and regions despite strong aggregate performance.** Sensor achieved the highest overall category accuracy at **95.51%**, while Control Unit recorded the lowest at **94.47%**. The weakest category-region combination was **Control Unit in South America at 93.78%**, highlighting an area for targeted forecast improvement.
 
 - **Operational execution achieved an 89.05% on-time order rate**, with approximately **8.91K of 10K orders delivered on time**. North America recorded the strongest regional on-time performance at **89.62%**, while Asia was lowest at **87.94%**. Control Unit had the highest delayed-order rate among product categories at **12.43%**, indicating a potential operational bottleneck.
+
+## Data Model
+
+The Power BI semantic model uses a dimensional modeling approach with two primary fact tables: `sales_orders` for transactional sales and operational analysis, and `demand_forecast` for demand forecasting analysis.
+
+Shared dimension tables provide consistent filtering across the analytical model:
+
+### Fact Tables
+
+- **sales_orders** — Order-level transactions used for revenue, customer, and delivery-performance analysis.
+- **demand_forecast** — Actual and forecast demand used for forecast accuracy and error analysis.
+
+### Dimension Tables
+
+- **Calendar** — Date dimension supporting monthly and quarterly analysis.
+- **customers** — Customer attributes and segmentation.
+- **products** — Product category and product line attributes.
+- **regions** — Geographic region attributes.
+
+![Power BI Data Model](images/data-model.png)
+
+## Key DAX Measures
+The dashboard uses reusable DAX measures to evaluate sales performance, customer activity, operational efficiency, and demand forecasting accuracy. Selected measures are shown below.
+
+### Forecast Accuracy
+
+```DAX
+Forecast Accuracy = 
+1 - [WAPE %]
+```
+
+Measures overall forecasting performance, where a higher value indicates closer alignment between forecast and actual demand.
+
+### WAPE
+
+```DAX
+WAPE % = 
+DIVIDE(
+    [Absolute Forecast Error],
+    SUM(demand_forecast[Actual_Demand])
+)
+```
+
+Calculates Weighted Absolute Percentage Error (WAPE) to measure total forecast error relative to actual demand.
+
+### Forecast Bias
+
+```DAX
+Forecast Bias % =
+DIVIDE(
+    [Total Forecast Demand] - [Total Actual Demand],
+    [Total Actual Demand]
+)
+```
+
+Identifies systematic over-forecasting or under-forecasting. Positive values indicate over-forecasting, while negative values indicate under-forecasting.
+
+### Total Revenue
+
+```DAX
+Total Revenue = 
+SUM(sales_orders[Revenue])
+```
+
+Calculates total sales revenue within the current filter context.
+
+### Revenue YoY Growth
+
+```DAX
+Revenue YoY Growth % = 
+DIVIDE(
+    [Total Revenue] - [Revenue Previous Year],
+    [Revenue Previous Year]
+)
+```
+
+Measures year-over-year revenue growth to evaluate changes in sales performance over time.
+
+### Active Customers
+
+```DAX
+Active Customers =
+DISTINCTCOUNT(sales_orders[Customer_ID])
+```
+
+Counts distinct customers with order activity within the current filter context.
+
+## Tools & Technologies
+
+- **Power BI Desktop** — Data modeling, DAX development, dashboard design, and interactive reporting
+- **DAX** — KPI calculations, time intelligence, forecasting metrics, and operational performance measures
+- **Power Query** — Data transformation and preparation
+- **SQL** — Data querying and analytical preparation
+- **Excel / CSV** — Source data preparation and validation
+- **Git & GitHub** — Version control and project documentation
+
+## Repository Structure
+
+```text
+demand-forecasting-sales-analytics/
+│
+├── images/
+│   ├── 01-executive-overview.png
+│   ├── 02-sales-customer-intelligence.png
+│   ├── 03-demand-forecasting-analytics.png
+│   ├── 04-operational-performance.png
+│   └── data-model.png
+│
+└── README.md
