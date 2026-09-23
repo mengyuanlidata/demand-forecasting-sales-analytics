@@ -1,0 +1,51 @@
+Customer_ID,Customer_Name,Customer_Type,Industry,Region_ID
+C001,"Rodriguez, Figueroa and Sanchez Automotive",Distributor,Automotive,R01
+C002,Doyle Ltd Automotive,OEM,Automotive,R04
+C003,"Mcclain, Miller and Henderson Automotive",Distributor,Automotive,R03
+C004,Davis and Sons Automotive,Distributor,Automotive,R03
+C005,"Guzman, Hoffman and Baldwin Automotive",OEM,Automotive,R04
+C006,"Gardner, Robinson and Lawrence Automotive",OEM,Automotive,R04
+C007,Blake and Sons Automotive,Dealer,Automotive,R02
+C008,"Henderson, Ramirez and Lewis Automotive",OEM,Automotive,R04
+C009,Garcia-James Automotive,Dealer,Automotive,R02
+C010,Abbott-Munoz Automotive,OEM,Automotive,R04
+C011,Blair PLC Automotive,OEM,Automotive,R04
+C012,Dudley Group Automotive,Distributor,Automotive,R01
+C013,Arnold Ltd Automotive,Distributor,Automotive,R01
+C014,"Mcclure, Ward and Lee Automotive",Distributor,Automotive,R03
+C015,Williams and Sons Automotive,OEM,Automotive,R04
+C016,Galloway-Wyatt Automotive,Aftermarket,Automotive,R03
+C017,James Group Automotive,Distributor,Automotive,R03
+C018,"Flowers, Martin and Kelly Automotive",Distributor,Automotive,R04
+C019,"Adams, Zuniga and Wong Automotive",Distributor,Automotive,R04
+C020,"Reid, Ferguson and Sanchez Automotive",Distributor,Automotive,R01
+C021,Gray-Mayo Automotive,Distributor,Automotive,R01
+C022,"Watts, Robinson and Nguyen Automotive",Distributor,Automotive,R02
+C023,Perez Inc Automotive,Aftermarket,Automotive,R04
+C024,Morales-Jones Automotive,Distributor,Automotive,R02
+C025,"Walter, Edwards and Rios Automotive",OEM,Automotive,R01
+C026,Wilkerson-Day Automotive,OEM,Automotive,R04
+C027,Baker and Sons Automotive,Distributor,Automotive,R03
+C028,"Hoffman, Baker and Richards Automotive",Distributor,Automotive,R04
+C029,"Ross, Robinson and Bright Automotive",OEM,Automotive,R02
+C030,"Snyder, Campos and Callahan Automotive",Distributor,Automotive,R02
+C031,Burton Ltd Automotive,Dealer,Automotive,R02
+C032,Carlson-Cruz Automotive,Distributor,Automotive,R02
+C033,"Ferrell, Rice and Maddox Automotive",Distributor,Automotive,R02
+C034,Frazier Inc Automotive,OEM,Automotive,R02
+C035,"Dyer, Potter and Mack Automotive",Dealer,Automotive,R02
+C036,Rodriguez-Graham Automotive,Distributor,Automotive,R04
+C037,Smith-Bowen Automotive,Distributor,Automotive,R04
+C038,"Baker, Mason and White Automotive",OEM,Automotive,R02
+C039,Harrell LLC Automotive,OEM,Automotive,R01
+C040,"Romero, Gonzalez and Brooks Automotive",Aftermarket,Automotive,R01
+C041,Ryan PLC Automotive,Distributor,Automotive,R02
+C042,George Group Automotive,Distributor,Automotive,R04
+C043,Rodriguez LLC Automotive,Distributor,Automotive,R04
+C044,Allen-Allen Automotive,Distributor,Automotive,R01
+C045,"Arroyo, Miller and Tucker Automotive",OEM,Automotive,R03
+C046,Spence PLC Automotive,OEM,Automotive,R01
+C047,Anderson Group Automotive,Aftermarket,Automotive,R04
+C048,"Martin, Rose and Obrien Automotive",Distributor,Automotive,R04
+C049,Hickman Ltd Automotive,OEM,Automotive,R03
+C050,"Harris, Collins and Carney Automotive",OEM,Automotive,R04

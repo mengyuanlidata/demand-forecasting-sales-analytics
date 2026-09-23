@@ -1,0 +1,9 @@
+Product_ID,Product_Category,Product_Line
+P001,Battery System,EV Component
+P002,Powertrain,Automotive Component
+P003,Motor Component,EV Component
+P004,Electronic Module,Automotive Component
+P005,Sensor,Automotive Component
+P006,Brake System,Automotive Component
+P007,Transmission,Automotive Component
+P008,Control Unit,Automotive Component
