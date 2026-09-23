@@ -76,7 +76,16 @@ Shared dimension tables provide consistent filtering across the analytical model
 
 ![Power BI Data Model](images/data-model.png)
 
+## Data Source
+
+This project uses synthetic datasets created for portfolio demonstration purposes. The data simulates sales transactions, customer information, product categories, regional operations, and demand forecasts.
+
+The datasets do not represent actual business performance or contain real customer information.
+
+All five source CSV files are available in the `data/` directory. The Power BI report is available in the `powerbi/` directory.
+
 ## Key DAX Measures
+
 The dashboard uses reusable DAX measures to evaluate sales performance, customer activity, operational efficiency, and demand forecasting accuracy. Selected measures are shown below.
 
 ### Forecast Accuracy
