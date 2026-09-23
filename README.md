@@ -4,6 +4,10 @@
 
 This project analyzes sales performance, customer behavior, and demand forecasting accuracy using Power BI.
 
+**Power BI Report:** [Download PBIX](powerbi/Demand_Forecasting_Sales_Analytics.pbix)
+
+**Dataset:** Synthetic data available in the `data/` directory.
+
 ## Business Problem
 
 Sales operations teams need a reliable way to monitor revenue performance, understand customer and product trends, and evaluate whether demand forecasts accurately reflect actual business demand.
@@ -164,12 +168,18 @@ Counts distinct customers with order activity within the current filter context.
 
 ```text
 demand-forecasting-sales-analytics/
-│
+├── README.md
 ├── images/
 │   ├── 01-executive-overview.png
 │   ├── 02-sales-customer-intelligence.png
 │   ├── 03-demand-forecasting-analytics.png
 │   ├── 04-operational-performance.png
 │   └── data-model.png
-│
-└── README.md
+├── powerbi/
+│   └── Demand_Forecasting_Sales_Analytics.pbix
+└── data/
+    ├── customers.csv
+    ├── demand_forecast.csv
+    ├── products.csv
+    ├── regions.csv
+    └── sales_orders.csv
