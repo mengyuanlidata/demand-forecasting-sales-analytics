@@ -2,7 +2,18 @@
 
 ## Project Overview
 
-This project analyzes sales performance, customer behavior, and demand forecasting accuracy using Power BI.
+This is an end-to-end predictive analytics and business intelligence portfolio project focused on demand forecasting, sales performance, customer intelligence, and operational efficiency.
+
+The project combines **Python, machine learning, SQL, and Power BI** to move from raw sales transactions to demand forecasts and business decision support.
+
+Key components include:
+
+- Built monthly demand data at the **Product × Region** level from transaction-level sales orders.
+- Engineered lag, rolling-average, seasonality, and time-trend features for demand forecasting.
+- Used time-series cross-validation to compare and tune forecasting models while avoiding future data leakage.
+- Selected a **Random Forest** model that achieved **34.19% WAPE** on the final test period, outperforming naive forecasting benchmarks.
+- Used SQL to analyze sales growth, customer performance, forecast accuracy, planning exceptions, and fulfillment performance.
+- Built a four-page Power BI dashboard to communicate model performance and business insights.
 
 **Power BI Report:** [Download PBIX](powerbi/Demand_Forecasting_Sales_Analytics.pbix)
 
@@ -197,12 +208,38 @@ Counts distinct customers with order activity within the current filter context.
 
 ## Tools & Technologies
 
-- **Power BI Desktop** — Data modeling, DAX development, dashboard design, and interactive reporting
-- **DAX** — KPI calculations, time intelligence, forecasting metrics, and operational performance measures
-- **Power Query** — Data transformation and preparation
-- **SQL** — Data querying and analytical preparation
-- **Excel / CSV** — Source data preparation and validation
-- **Git & GitHub** — Version control and project documentation
+### Predictive Analytics
+- Python
+- pandas
+- NumPy
+- scikit-learn
+- Random Forest Regressor
+- HistGradientBoostingRegressor
+- TimeSeriesSplit
+- GridSearchCV
+- Feature Engineering
+- Time-Series Cross-Validation
+
+### Business Analytics
+- SQL
+- DuckDB
+- Window Functions
+- KPI Analysis
+- Forecast Error Analysis
+- Customer & Sales Analytics
+
+### Business Intelligence
+- Power BI
+- DAX
+- Data Modeling
+- Data Visualization
+- Dashboard Design
+
+### Development & Version Control
+- Jupyter Notebook
+- VS Code
+- Git
+- GitHub
 
 ## Repository Structure
 
