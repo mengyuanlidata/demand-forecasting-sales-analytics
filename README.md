@@ -28,6 +28,46 @@ This analysis focuses on four key business questions:
 
 4. **Operational Exceptions:** Which products, regions, or periods require attention due to significant demand or forecast deviations?
 
+## Demand Forecasting Methodology
+
+The forecasting component predicts monthly demand at the **Product × Region** level using historical sales orders.
+
+### Modeling Approach
+
+1. Aggregated transaction-level sales into monthly demand by product and region.
+2. Created historical demand features including:
+   - Lagged demand
+   - Rolling demand averages
+   - Monthly seasonality
+   - Quarter and time-trend features
+3. Preserved chronological order during model development to prevent future data leakage.
+4. Used time-series cross-validation for model selection and hyperparameter tuning.
+5. Compared machine learning forecasts against simple demand forecasting benchmarks.
+6. Reserved July–December 2025 as the final test period.
+
+### Model Selection
+
+The following approaches were evaluated:
+
+- Naive Forecast — previous month's demand
+- Seasonal Naive — demand from the same month one year earlier
+- Random Forest
+- Histogram Gradient Boosting
+
+Random Forest achieved the strongest validation performance and was selected as the final model.
+
+### Final Test Performance
+
+| Model | MAE | RMSE | WAPE |
+|---|---:|---:|---:|
+| Random Forest | 3,141 | 4,246 | 34.19% |
+| Seasonal Naive | 3,899 | 4,910 | 42.44% |
+| Naive Forecast | 4,259 | 5,450 | 46.35% |
+
+The Random Forest reduced WAPE by approximately **26% compared with the previous-month naive forecast** and by approximately **19% compared with the seasonal naive benchmark**.
+
+The final Power BI dashboard uses the Random Forest test predictions to analyze forecast accuracy, forecast bias, and performance differences across products and regions.
+
 ## Dashboard Preview
 
 ### 1. Executive Overview
