@@ -1,0 +1,4 @@
+﻿sales_year,total_orders,on_time_orders,delayed_orders,ordered_units,on_time_units,total_revenue,delayed_revenue,average_delivery_days,on_time_order_rate_pct,on_time_unit_rate_pct,delayed_revenue_exposure_pct
+2023,3325,2955,370,3376995.0,2990471.0,883467842.46,104350911.83,16.11,88.87,88.55,11.81
+2024,3382,3015,367,3511176.0,3145926.0,908087627.86,93388963.11,16.19,89.15,89.6,10.28
+2025,3293,2935,358,3447947.0,3063098.0,889421577.31,99927538.76,16.04,89.13,88.84,11.24

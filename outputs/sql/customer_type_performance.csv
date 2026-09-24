@@ -1,0 +1,5 @@
+﻿Customer_Type,active_customers,total_orders,total_units_sold,total_revenue,revenue_per_customer,average_order_value,revenue_contribution_pct,segment_revenue_rank
+Distributor,25,4942,5129777.0,1329917176.09,53196687.04,269105.05,49.61,1
+OEM,17,3443,3529634.0,913201574.7,53717739.69,265234.27,34.06,2
+Aftermarket,4,806,839052.0,220776925.68,55194231.42,273916.78,8.23,3
+Dealer,4,809,837655.0,217081371.16,54270342.79,268332.97,8.1,4

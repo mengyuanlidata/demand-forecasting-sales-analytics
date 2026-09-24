@@ -1,0 +1,438 @@
+table _Measures
+	lineageTag: c5032547-ad4f-463e-aad7-af11865cd8c4
+
+	measure 'Active Customers' =
+			
+			DISTINCTCOUNT(sales_orders[Customer_ID])
+		formatString: 0
+		displayFolder: Customer
+		lineageTag: d94fbfce-6656-4755-8225-dc91a6c2bd0e
+
+	/// Sum of observation-level absolute errors, so opposing errors cannot cancel.
+	measure 'Absolute Forecast Error Impact' = [Absolute Forecast Error]
+		formatString: #,0.00
+		displayFolder: Forecast evaluation
+		lineageTag: f3cf1541-dae5-4946-be60-49fb7cb7ebef
+
+	measure 'Average Delivery Days' =
+			
+			AVERAGE(sales_orders[Delivery_Days])
+		displayFolder: Operations
+		lineageTag: e23ce21d-8277-4f4d-aab8-2e40db7fc622
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Average Order Value' =
+			
+			DIVIDE([Total Revenue], [Total Orders])
+		displayFolder: Sales
+		lineageTag: 54475cb2-9f14-417c-a80b-52affcde916f
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Delayed Order Rate %' =
+			
+			DIVIDE(
+			    [Delayed Orders],
+			    [Total Orders]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Operations
+		lineageTag: 9fc5d6f7-d716-40d0-8d89-5946592f983d
+
+	measure 'Delayed Orders' =
+			
+			CALCULATE(
+			    [Total Orders],
+			    sales_orders[Order_Status] = "Delayed"
+			)
+		formatString: 0
+		displayFolder: Operations
+		lineageTag: e0e677a5-4d67-4be5-b106-76e14d8a233a
+
+	measure 'Delayed Revenue' =
+			
+			CALCULATE(
+			    [Total Revenue],
+			    sales_orders[Order_Status] = "Delayed"
+			)
+		displayFolder: Operations
+		lineageTag: 3d131bb3-0c7e-4b15-9f94-1f3c7ae76a56
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	/// Legacy compatibility measure. Main report uses MAE, RMSE and WAPE instead.
+	measure 'Forecast Accuracy' = IF(NOT ISBLANK([WAPE %]), 1 - [WAPE %])
+		formatString: 0.00%
+		isHidden
+		displayFolder: Forecast evaluation
+		lineageTag: 357dd4c1-09c4-448f-9d82-1f80d1b90f0a
+
+	measure 'Forecast Bias %' =
+			
+			DIVIDE(
+			    [Total Forecast Demand] - [Total Actual Demand],
+			    [Total Actual Demand]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Forecast evaluation
+		lineageTag: d2679876-98b3-48c0-be9a-cfe3b7464187
+
+	measure 'On-Time Orders' =
+			
+			CALCULATE(
+			    [Total Orders],
+			    sales_orders[Order_Status] = "Completed"
+			)
+		formatString: 0
+		displayFolder: Operations
+		lineageTag: ab47361c-9d0a-4f8e-ba9d-31e7b214a9e6
+
+	measure 'On-Time Unit Rate %' =
+			
+			DIVIDE(
+			    [On-Time Units],
+			    [Ordered Units]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Operations
+		lineageTag: f32695bc-d4ac-4a1a-8199-7def15222645
+
+	measure 'On-Time Units' =
+			
+			CALCULATE(
+			    [Ordered Units],
+			    sales_orders[Order_Status] = "Completed"
+			)
+		formatString: 0
+		displayFolder: Operations
+		lineageTag: 332f957a-e311-46ad-bcf5-8a53946c9e67
+
+	measure 'Ordered Units' =
+			
+			SUM(sales_orders[Quantity])
+		formatString: 0
+		displayFolder: Operations
+		lineageTag: 7dc58635-8c8c-4082-8c33-588c17dba767
+
+	measure 'Revenue Contribution %' =
+			
+			DIVIDE(
+			    [Total Revenue],
+			    CALCULATE(
+			        [Total Revenue],
+			        ALL(customers)
+			    )
+			)
+		formatString: 0.00%
+		displayFolder: Sales
+		lineageTag: 0e457710-ccf9-414c-919e-406ae803e39d
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue Display' =
+			
+			VAR Revenue = [Total Revenue]
+			RETURN
+			SWITCH(
+			    TRUE(),
+			    Revenue >= 1000000000,
+			        FORMAT(Revenue / 1000000000, "0.00") & "B",
+			    Revenue >= 1000000,
+			        FORMAT(Revenue / 1000000, "0.00") & "M",
+			    Revenue >= 1000,
+			        FORMAT(Revenue / 1000, "0.00") & "K",
+			    FORMAT(Revenue,"0")
+			)
+		displayFolder: Helpers
+		lineageTag: fa89d714-1e75-49a5-af73-0dbcb37ed042
+
+	measure 'Revenue per Customer' =
+			
+			DIVIDE(
+			    [Total Revenue],
+			    [Active Customers]
+			)
+		displayFolder: Sales
+		lineageTag: e23e16e1-e206-4720-a494-5a345af6ba29
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue Previous Year' =
+			
+			CALCULATE(
+			    [Total Revenue],
+			    SAMEPERIODLASTYEAR(Calendar[Date])
+			)
+		displayFolder: Sales
+		lineageTag: 7fdea677-b708-49b8-ac0a-7041eb3dcab4
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Revenue YoY Growth %' =
+			
+			DIVIDE(
+			    [Total Revenue] - [Revenue Previous Year],
+			    [Revenue Previous Year]
+			)
+		formatString: 0.00%
+		displayFolder: Sales
+		lineageTag: 0d962cea-5cb7-4cf8-acfb-0459c88fb326
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Top 10 Customer Revenue' =
+			
+			VAR TopCustomers =
+			    TOPN(
+			        10,
+			        ALLSELECTED(customers[Customer_ID]),
+			        [Total Revenue],
+			        DESC
+			    )
+			RETURN
+			    CALCULATE(
+			        [Total Revenue],
+			        KEEPFILTERS(TopCustomers)
+			    )
+		displayFolder: Customer
+		lineageTag: 1c249440-84ad-40cd-81f9-1ecf3917a48a
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Top 10 Customer Revenue %' =
+			
+			DIVIDE(
+			    [Top 10 Customer Revenue],
+			    [Total Revenue]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Customer
+		lineageTag: 6d52a370-0105-4f8b-ba62-ca13418fcb70
+
+	measure 'Total Actual Demand' =
+			
+			SUM(demand_forecast[Actual_Demand])
+		formatString: 0
+		displayFolder: Forecast evaluation
+		lineageTag: 1922aaa3-71c6-4ee0-8b1d-6b68ff3a3fed
+
+	measure 'Total Forecast Demand' =
+			
+			SUM(demand_forecast[Forecast_Demand])
+		formatString: #,0.00
+		displayFolder: Forecast evaluation
+		lineageTag: 7345c5c6-ddbc-46bb-8740-2a918e31c8f7
+
+	measure 'Total Orders' =
+			
+			DISTINCTCOUNT(sales_orders[Order_ID])
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 15f280da-611d-44da-a522-15287d48e79f
+
+	measure 'Total Revenue' =
+			
+			SUM(sales_orders[Revenue])
+		displayFolder: Sales
+		lineageTag: 0bf1e8ce-6f1d-40a3-b747-b16591e1cdcf
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	measure 'Total Units Sold' =
+			
+			SUM(sales_orders[Quantity])
+		formatString: 0
+		displayFolder: Sales
+		lineageTag: 9498590c-f833-406c-8629-8a9fdac7d061
+
+	measure 'Absolute Forecast Error' =
+			
+			SUMX(
+			    demand_forecast,
+			    ABS(
+			        demand_forecast[Actual_Demand]
+			        -
+			        demand_forecast[Forecast_Demand]
+			    )
+			)
+		formatString: 0
+		displayFolder: Forecast evaluation
+		lineageTag: 219bdc4e-22c0-4be1-86e8-591cf84685ec
+
+	measure 'Forecast Error' =
+			
+			SUM(demand_forecast[Forecast_Demand])
+			    - SUM(demand_forecast[Actual_Demand])
+		formatString: 0
+		displayFolder: Forecast evaluation
+		lineageTag: f1395921-3741-4cf1-b45a-ae3b1be7f47c
+
+	measure 'WAPE %' =
+			
+			DIVIDE(
+			    [Absolute Forecast Error],
+			    SUM(demand_forecast[Actual_Demand])
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Forecast evaluation
+		lineageTag: e0390055-bab0-4ad1-bc83-788f8715d2bc
+
+	/// Legacy 5% tolerance definition retained for compatibility only; not used in the updated report.
+	measure 'Planning Exceptions' =
+			
+			COUNTROWS(
+			    FILTER(
+			        demand_forecast,
+			        ABS(
+			            DIVIDE(
+			                demand_forecast[Forecast_Demand]
+			                    - demand_forecast[Actual_Demand],
+			                demand_forecast[Actual_Demand]
+			            )
+			        ) >= 0.05
+			    )
+			)
+		formatString: 0
+		isHidden
+		displayFolder: Forecast
+		lineageTag: 375676e9-b070-486a-a185-d5be6a39e584
+
+	measure 'On-Time Order Rate %' =
+			
+			DIVIDE(
+			    [On-Time Orders],
+			    [Total Orders]
+			)
+		formatString: 0.00%;-0.00%;0.00%
+		displayFolder: Operations
+		lineageTag: abd84a0f-194b-41ec-bec8-49bccc12612e
+
+	measure 'Forecast Observations' = COUNTROWS(demand_forecast)
+		formatString: #,0
+		displayFolder: Forecast evaluation
+		lineageTag: 6375339e-7c82-4983-9f6f-b5a52aa89148
+
+	measure 'Forecast MAE' = DIVIDE([Absolute Forecast Error], [Forecast Observations])
+		formatString: #,0.00
+		displayFolder: Forecast evaluation
+		lineageTag: ebd7dd06-8aef-44f2-834f-c68943d999da
+
+	measure 'Forecast RMSE' = SQRT(DIVIDE(SUMX(demand_forecast, POWER(demand_forecast[Forecast_Demand] - demand_forecast[Actual_Demand], 2)), [Forecast Observations]))
+		formatString: #,0.00
+		displayFolder: Forecast evaluation
+		lineageTag: 07b05a10-caa9-4076-8a41-5b6e35a535d1
+
+	measure 'Mean Forecast Bias' = DIVIDE([Forecast Error], [Forecast Observations])
+		formatString: #,0.00
+		displayFolder: Forecast evaluation
+		lineageTag: 946dc3dc-58c2-404a-892c-8995a9867d97
+
+	measure 'Overforecast Observations' = COUNTROWS(FILTER(demand_forecast, demand_forecast[Forecast_Demand] > demand_forecast[Actual_Demand]))
+		formatString: #,0
+		displayFolder: Forecast evaluation
+		lineageTag: 35d647c0-ea50-4545-a9fc-a9207d963ac2
+
+	measure 'Underforecast Observations' = COUNTROWS(FILTER(demand_forecast, demand_forecast[Forecast_Demand] < demand_forecast[Actual_Demand]))
+		formatString: #,0
+		displayFolder: Forecast evaluation
+		lineageTag: 986d7b07-b427-4fa3-8c02-18a8ce23c220
+
+	measure 'Forecast Evaluation Period' =
+			VAR FirstMonth = MIN(demand_forecast[Month])
+			VAR LastMonth = MAX(demand_forecast[Month])
+			RETURN IF(NOT ISBLANK(FirstMonth), FORMAT(FirstMonth, "MMM yyyy") & " - " & FORMAT(LastMonth, "MMM yyyy"))
+		displayFolder: Forecast evaluation
+		lineageTag: 9fa12980-d080-47db-8f98-677e7df7d120
+
+	measure 'Naive MAE' = DIVIDE(SUMX(demand_forecast, ABS(demand_forecast[Naive_Forecast] - demand_forecast[Actual_Demand])), [Forecast Observations])
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: a5324b5a-7af0-4d6e-b7a4-b332f5b779c0
+
+	measure 'Naive RMSE' = SQRT(DIVIDE(SUMX(demand_forecast, POWER(demand_forecast[Naive_Forecast] - demand_forecast[Actual_Demand], 2)), [Forecast Observations]))
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: 93959394-53e4-45f8-b3a6-656726680f3c
+
+	measure 'Naive WAPE %' = DIVIDE(SUMX(demand_forecast, ABS(demand_forecast[Naive_Forecast] - demand_forecast[Actual_Demand])), [Total Actual Demand])
+		formatString: 0.00%
+		displayFolder: Baseline comparison
+		lineageTag: ab0e6a09-75ed-4b0d-84aa-5da72d5d498b
+
+	measure 'Seasonal Naive MAE' = DIVIDE(SUMX(demand_forecast, ABS(demand_forecast[Seasonal_Naive_Forecast] - demand_forecast[Actual_Demand])), [Forecast Observations])
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: f0e9e3ee-8e33-4809-b53b-4d0cb477d18f
+
+	measure 'Seasonal Naive RMSE' = SQRT(DIVIDE(SUMX(demand_forecast, POWER(demand_forecast[Seasonal_Naive_Forecast] - demand_forecast[Actual_Demand], 2)), [Forecast Observations]))
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: ed89e2a1-f552-46b8-b15b-5f86dd6fabb9
+
+	measure 'Seasonal Naive WAPE %' = DIVIDE(SUMX(demand_forecast, ABS(demand_forecast[Seasonal_Naive_Forecast] - demand_forecast[Actual_Demand])), [Total Actual Demand])
+		formatString: 0.00%
+		displayFolder: Baseline comparison
+		lineageTag: 071f4bb2-0718-4cbd-bfe1-72e4f21dcb40
+
+	measure 'Benchmark MAE' =
+			SWITCH(SELECTEDVALUE('Forecast Models'[Model]),
+			    "Random Forest", [Forecast MAE],
+			    "Naive Forecast", [Naive MAE],
+			    "Seasonal Naive", [Seasonal Naive MAE],
+			    BLANK())
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: 76cce9e5-4577-4794-a5f2-90305e941209
+
+	measure 'Benchmark RMSE' =
+			SWITCH(SELECTEDVALUE('Forecast Models'[Model]),
+			    "Random Forest", [Forecast RMSE],
+			    "Naive Forecast", [Naive RMSE],
+			    "Seasonal Naive", [Seasonal Naive RMSE],
+			    BLANK())
+		formatString: #,0.00
+		displayFolder: Baseline comparison
+		lineageTag: f2dc44df-f91f-4df0-8946-7facdfa94755
+
+	measure 'Benchmark WAPE %' =
+			SWITCH(SELECTEDVALUE('Forecast Models'[Model]),
+			    "Random Forest", [WAPE %],
+			    "Naive Forecast", [Naive WAPE %],
+			    "Seasonal Naive", [Seasonal Naive WAPE %],
+			    BLANK())
+		formatString: 0.00%
+		displayFolder: Baseline comparison
+		lineageTag: 6ed1a85c-044b-45cc-b7f9-08b7fd7335f5
+
+	measure 'MAE Improvement vs Naive %' = DIVIDE([Naive MAE] - [Forecast MAE], [Naive MAE])
+		formatString: 0.00%
+		displayFolder: Baseline comparison
+		lineageTag: cee311d2-507a-40eb-881a-2b58d2d27823
+
+	measure 'MAE Improvement vs Seasonal %' = DIVIDE([Seasonal Naive MAE] - [Forecast MAE], [Seasonal Naive MAE])
+		formatString: 0.00%
+		displayFolder: Baseline comparison
+		lineageTag: 1449c699-bfab-4e69-981b-7aa78ce514b7
+
+	column Placeholder
+		isHidden
+		lineageTag: a66d5898-58cc-4e4d-b7f2-4de111a57835
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Placeholder]
+
+		annotation SummarizationSetBy = Automatic
+
+	partition _Measures = calculated
+		mode: import
+		source =
+				
+				DATATABLE(
+				    "Placeholder",
+				    STRING,
+				    {{"Measures"}}
+				)
+
+	annotation PBI_Id = 943b972ab4df4acf9322458026740b8f
+

@@ -1,0 +1,33 @@
+table regions
+	lineageTag: e3914e00-a670-4921-ae3a-77c46ab21dcf
+
+	column Region_ID
+		dataType: string
+		lineageTag: fba9c0bd-0b89-4938-9f0d-1358b82267e6
+		summarizeBy: none
+		sourceColumn: Region_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 017cdadc-61da-40e0-b513-e8e73f7d2111
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition regions = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/raw/regions.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"Region_ID", type text}, {"Region", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

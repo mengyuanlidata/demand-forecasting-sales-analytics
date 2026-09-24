@@ -1,0 +1,17 @@
+﻿Region,Customer_Type,previous_year,latest_year,active_customers,previous_year_revenue,latest_year_revenue,revenue_per_customer,revenue_yoy_growth_pct,company_revenue_per_customer,revenue_per_customer_gap,opportunity_segment
+Asia,Aftermarket,2024,2025,1,14960970.24,21464791.17,21464791.17,43.47,17788431.55,-3676359.62,High Growth Market
+Europe,Dealer,2024,2025,4,63331082.72,79997899.5,19999474.88,26.32,17788431.55,-2211043.33,High Growth Market
+Europe,OEM,2024,2025,3,50730616.9,55316373.62,18438791.21,9.04,17788431.55,-650359.66,High Growth Market
+Asia,Distributor,2024,2025,5,85144288.79,87289702.5,17457940.5,2.52,17788431.55,330491.05,Stable Growth
+South America,OEM,2024,2025,9,163535747.75,162994703.85,18110522.65,-0.33,17788431.55,-322091.1,Defend and Grow
+North America,Distributor,2024,2025,6,107866906.04,102341996.56,17056999.43,-5.12,17788431.55,731432.12,Expansion Opportunity
+South America,Distributor,2024,2025,8,151608322.11,143812484.46,17976560.56,-5.14,17788431.55,-188129.01,Defend and Grow
+South America,Aftermarket,2024,2025,2,41279900.49,37244738.71,18622369.36,-9.78,17788431.55,-833937.81,Defend and Grow
+North America,OEM,2024,2025,3,58468665.98,52474610.29,17491536.76,-10.25,17788431.55,296894.79,Expansion Opportunity
+Europe,Distributor,2024,2025,6,111229269.12,98495908.19,16415984.7,-11.45,17788431.55,1372446.85,Expansion Opportunity
+North America,Aftermarket,2024,2025,1,19710707.93,16683321.1,16683321.1,-15.36,17788431.55,1105110.45,Expansion Opportunity
+Asia,OEM,2024,2025,2,40221149.79,31305047.36,15652523.68,-22.17,17788431.55,2135907.87,Expansion Opportunity
+Europe,Aftermarket,2024,2025,0,0.0,0.0,0.0,,17788431.55,17788431.55,No Active Customers
+Asia,Dealer,2024,2025,0,0.0,0.0,0.0,,17788431.55,17788431.55,No Active Customers
+South America,Dealer,2024,2025,0,0.0,0.0,0.0,,17788431.55,17788431.55,No Active Customers
+North America,Dealer,2024,2025,0,0.0,0.0,0.0,,17788431.55,17788431.55,No Active Customers

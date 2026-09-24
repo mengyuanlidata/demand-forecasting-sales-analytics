@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "demand_forecasting"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "e4077e08-8fe2-4f67-8697-91ad115d50f3"
+  }
+}

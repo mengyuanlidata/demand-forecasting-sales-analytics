@@ -1,0 +1,25 @@
+model Model
+	culture: en-US
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: zh-CN
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 1
+
+annotation PBI_QueryOrder = ["sales_orders","regions","products","customers","demand_forecast"]
+
+annotation PBI_ProTooling = ["DevMode"]
+
+ref table sales_orders
+ref table regions
+ref table products
+ref table customers
+ref table Calendar
+ref table demand_forecast
+ref table _Measures
+ref table 'Forecast Models'
+
+ref cultureInfo en-US
+

@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Demand Forecasting - Layout Fixed"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "5f172167-c470-43d6-86c9-c8b4de1ca6f3"
+  }
+}

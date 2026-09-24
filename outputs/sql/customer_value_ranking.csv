@@ -1,0 +1,51 @@
+﻿Customer_ID,Customer_Name,Customer_Type,Region,total_revenue,total_units_sold,total_orders,average_order_value,last_order_date,revenue_contribution_pct,customer_revenue_rank
+C028,"Hoffman, Baker and Richards Automotive",Distributor,South America,64589339.97,249140.0,242,266898.1,2025-12-30,2.41,1
+C030,"Snyder, Campos and Callahan Automotive",Distributor,Europe,63069488.19,231854.0,208,303218.69,2025-12-23,2.35,2
+C008,"Henderson, Ramirez and Lewis Automotive",OEM,South America,61641120.79,230116.0,221,278919.1,2025-12-30,2.3,3
+C011,Blair PLC Automotive,OEM,South America,61366427.85,235523.0,215,285425.25,2025-12-30,2.29,4
+C013,Arnold Ltd Automotive,Distributor,North America,59554484.41,223689.0,208,286319.64,2025-12-24,2.22,5
+C023,Perez Inc Automotive,Aftermarket,South America,59480052.01,220092.0,214,277944.17,2025-12-26,2.22,6
+C044,Allen-Allen Automotive,Distributor,North America,58795487.71,225960.0,206,285414.99,2025-12-25,2.19,7
+C047,Anderson Group Automotive,Aftermarket,South America,58638408.29,214144.0,201,291733.37,2025-12-27,2.19,8
+C035,"Dyer, Potter and Mack Automotive",Dealer,Europe,58563864.66,220211.0,210,278875.55,2025-12-31,2.18,9
+C026,Wilkerson-Day Automotive,OEM,South America,58207218.11,213409.0,209,278503.44,2025-12-20,2.17,10
+C017,James Group Automotive,Distributor,Asia,57936814.52,231133.0,220,263349.16,2025-12-02,2.16,11
+C002,Doyle Ltd Automotive,OEM,South America,57845998.11,216408.0,214,270308.4,2025-12-28,2.16,12
+C021,Gray-Mayo Automotive,Distributor,North America,57212055.59,220128.0,216,264870.63,2025-12-30,2.13,13
+C025,"Walter, Edwards and Rios Automotive",OEM,North America,56972228.93,213354.0,201,283443.93,2025-12-28,2.13,14
+C022,"Watts, Robinson and Nguyen Automotive",Distributor,Europe,56675682.36,219842.0,210,269884.2,2025-12-31,2.11,15
+C038,"Baker, Mason and White Automotive",OEM,Europe,56165631.97,212037.0,206,272648.7,2025-12-30,2.09,16
+C015,Williams and Sons Automotive,OEM,South America,55912596.93,209798.0,221,252998.18,2025-12-28,2.09,17
+C001,"Rodriguez, Figueroa and Sanchez Automotive",Distributor,North America,55796275.28,209851.0,200,278981.38,2025-12-18,2.08,18
+C014,"Mcclure, Ward and Lee Automotive",Distributor,Asia,55679680.93,212925.0,197,282637.97,2025-12-29,2.08,19
+C009,Garcia-James Automotive,Dealer,Europe,55639598.84,215525.0,212,262450.94,2025-12-23,2.08,20
+C050,"Harris, Collins and Carney Automotive",OEM,South America,55002660.72,203105.0,193,284987.88,2025-12-20,2.05,21
+C036,Rodriguez-Graham Automotive,Distributor,South America,54909212.6,204679.0,201,273180.16,2025-12-27,2.05,22
+C043,Rodriguez LLC Automotive,Distributor,South America,54036730.99,211533.0,198,272912.78,2025-12-16,2.02,23
+C019,"Adams, Zuniga and Wong Automotive",Distributor,South America,53970254.54,210806.0,209,258230.88,2025-12-20,2.01,24
+C003,"Mcclain, Miller and Henderson Automotive",Distributor,Asia,53945550.2,203119.0,192,280966.41,2025-12-29,2.01,25
+C024,Morales-Jones Automotive,Distributor,Europe,53660065.88,206768.0,201,266965.5,2025-12-29,2.0,26
+C031,Burton Ltd Automotive,Dealer,Europe,53028477.49,208030.0,192,276189.99,2025-12-31,1.98,27
+C016,Galloway-Wyatt Automotive,Aftermarket,Asia,52151295.82,204204.0,191,273043.43,2025-12-31,1.95,28
+C046,Spence PLC Automotive,OEM,North America,52000781.91,202184.0,181,287297.14,2025-12-27,1.94,29
+C039,Harrell LLC Automotive,OEM,North America,51946737.18,201639.0,205,253398.72,2025-12-30,1.94,30
+C034,Frazier Inc Automotive,OEM,Europe,51828559.12,209556.0,200,259142.8,2025-12-25,1.93,31
+C029,"Ross, Robinson and Bright Automotive",OEM,Europe,51412528.73,201861.0,204,252022.2,2025-12-31,1.92,32
+C042,George Group Automotive,Distributor,South America,51113100.29,199053.0,201,254294.03,2025-12-27,1.91,33
+C049,Hickman Ltd Automotive,OEM,Asia,51009274.61,207439.0,201,253777.49,2025-12-31,1.9,34
+C040,"Romero, Gonzalez and Brooks Automotive",Aftermarket,North America,50507169.56,200612.0,200,252535.85,2025-12-24,1.88,35
+C007,Blake and Sons Automotive,Dealer,Europe,49849430.17,193889.0,195,255638.1,2025-12-30,1.86,36
+C010,Abbott-Munoz Automotive,OEM,South America,49769759.12,191048.0,189,263332.06,2025-12-25,1.86,37
+C012,Dudley Group Automotive,Distributor,North America,49691150.69,195789.0,184,270060.6,2025-12-18,1.85,38
+C037,Smith-Bowen Automotive,Distributor,South America,49658017.35,178554.0,185,268421.72,2025-12-10,1.85,39
+C045,"Arroyo, Miller and Tucker Automotive",OEM,Asia,49506687.45,199026.0,205,241496.04,2025-12-27,1.85,40
+C048,"Martin, Rose and Obrien Automotive",Distributor,South America,49429071.33,179243.0,186,265747.7,2025-12-31,1.84,41
+C032,Carlson-Cruz Automotive,Distributor,Europe,49244607.39,194955.0,189,260553.48,2025-12-30,1.84,42
+C033,"Ferrell, Rice and Maddox Automotive",Distributor,Europe,49078076.2,194990.0,197,249127.29,2025-12-30,1.83,43
+C020,"Reid, Ferguson and Sanchez Automotive",Distributor,North America,47844679.3,184954.0,184,260025.43,2025-12-29,1.78,44
+C006,"Gardner, Robinson and Lawrence Automotive",OEM,South America,47396775.99,198382.0,192,246858.21,2025-12-28,1.77,45
+C041,Ryan PLC Automotive,Distributor,Europe,47131664.45,186866.0,168,280545.62,2025-12-24,1.76,46
+C027,Baker and Sons Automotive,Distributor,Asia,46874661.24,179570.0,178,263340.79,2025-12-22,1.75,47
+C004,Davis and Sons Automotive,Distributor,Asia,45453854.15,198940.0,191,237978.29,2025-12-31,1.7,48
+C005,"Guzman, Hoffman and Baldwin Automotive",OEM,South America,45216587.18,184749.0,186,243099.93,2025-12-29,1.69,49
+C018,"Flowers, Martin and Kelly Automotive",Distributor,South America,44567170.53,175436.0,171,260626.73,2025-12-29,1.66,50

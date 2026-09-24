@@ -1,0 +1,51 @@
+﻿Customer_ID,Customer_Name,Customer_Type,Region,previous_year,latest_year,previous_year_revenue,latest_year_revenue,revenue_yoy_growth_pct,customer_momentum
+C031,Burton Ltd Automotive,Dealer,Europe,2024,2025,13567267.14,20708095.99,52.63,High Growth
+C016,Galloway-Wyatt Automotive,Aftermarket,Asia,2024,2025,14960970.24,21464791.17,43.47,High Growth
+C018,"Flowers, Martin and Kelly Automotive",Distributor,South America,2024,2025,12961049.59,18098210.36,39.64,High Growth
+C038,"Baker, Mason and White Automotive",OEM,Europe,2024,2025,15459644.49,20663629.25,33.66,High Growth
+C007,Blake and Sons Automotive,Dealer,Europe,2024,2025,15396141.54,20172069.76,31.02,High Growth
+C014,"Mcclure, Ward and Lee Automotive",Distributor,Asia,2024,2025,15022436.06,19305315.29,28.51,High Growth
+C039,Harrell LLC Automotive,OEM,North America,2024,2025,16816346.73,20701546.74,23.1,High Growth
+C011,Blair PLC Automotive,OEM,South America,2024,2025,16369551.61,19954312.55,21.9,High Growth
+C003,"Mcclain, Miller and Henderson Automotive",Distributor,Asia,2024,2025,17079058.9,20777733.61,21.66,High Growth
+C035,"Dyer, Potter and Mack Automotive",Dealer,Europe,2024,2025,17050039.32,20237390.8,18.69,High Growth
+C001,"Rodriguez, Figueroa and Sanchez Automotive",Distributor,North America,2024,2025,16413566.57,19476052.38,18.66,High Growth
+C032,Carlson-Cruz Automotive,Distributor,Europe,2024,2025,16510344.69,18948364.92,14.77,High Growth
+C043,Rodriguez LLC Automotive,Distributor,South America,2024,2025,16513057.51,18918646.64,14.57,High Growth
+C006,"Gardner, Robinson and Lawrence Automotive",OEM,South America,2024,2025,15647488.95,17918922.91,14.52,High Growth
+C030,"Snyder, Campos and Callahan Automotive",Distributor,Europe,2024,2025,20228940.74,23017006.67,13.78,High Growth
+C028,"Hoffman, Baker and Richards Automotive",Distributor,South America,2024,2025,21761712.65,24733810.21,13.66,High Growth
+C010,Abbott-Munoz Automotive,OEM,South America,2024,2025,18788328.82,20798141.3,10.7,High Growth
+C050,"Harris, Collins and Carney Automotive",OEM,South America,2024,2025,16706261.65,18283502.42,9.44,Stable
+C009,Garcia-James Automotive,Dealer,Europe,2024,2025,17317634.72,18880342.95,9.02,Stable
+C047,Anderson Group Automotive,Aftermarket,South America,2024,2025,19060560.28,20389790.11,6.97,Stable
+C026,Wilkerson-Day Automotive,OEM,South America,2024,2025,17699079.48,18266211.99,3.2,Stable
+C020,"Reid, Ferguson and Sanchez Automotive",Distributor,North America,2024,2025,14580929.59,14950457.47,2.53,Stable
+C034,Frazier Inc Automotive,OEM,Europe,2024,2025,17771701.92,17845011.97,0.41,Stable
+C008,"Henderson, Ramirez and Lewis Automotive",OEM,South America,2024,2025,19979000.62,20015070.93,0.18,Stable
+C017,James Group Automotive,Distributor,Asia,2024,2025,21612327.23,21545052.61,-0.31,Stable
+C013,Arnold Ltd Automotive,Distributor,North America,2024,2025,18290068.11,18128958.37,-0.88,Stable
+C029,"Ross, Robinson and Bright Automotive",OEM,Europe,2024,2025,17499270.49,16807732.4,-3.95,Stable
+C015,Williams and Sons Automotive,OEM,South America,2024,2025,19208416.81,17743641.04,-7.63,Stable
+C027,Baker and Sons Automotive,Distributor,Asia,2024,2025,16083767.0,14723245.5,-8.46,Stable
+C044,Allen-Allen Automotive,Distributor,North America,2024,2025,19500797.27,17616408.01,-9.66,Stable
+C002,Doyle Ltd Automotive,OEM,South America,2024,2025,20560076.42,18346324.39,-10.77,At Risk
+C046,Spence PLC Automotive,OEM,North America,2024,2025,17336981.44,15306068.75,-11.71,At Risk
+C045,"Arroyo, Miller and Tucker Automotive",OEM,Asia,2024,2025,20334554.7,17925183.53,-11.85,At Risk
+C040,"Romero, Gonzalez and Brooks Automotive",Aftermarket,North America,2024,2025,19710707.93,16683321.1,-15.36,At Risk
+C024,Morales-Jones Automotive,Distributor,Europe,2024,2025,19984947.32,16892829.55,-15.47,At Risk
+C021,Gray-Mayo Automotive,Distributor,North America,2024,2025,22484283.36,18791780.47,-16.42,At Risk
+C048,"Martin, Rose and Obrien Automotive",Distributor,South America,2024,2025,19572430.64,16309114.51,-16.67,At Risk
+C019,"Adams, Zuniga and Wong Automotive",Distributor,South America,2024,2025,21381792.53,17788155.79,-16.81,At Risk
+C042,George Group Automotive,Distributor,South America,2024,2025,22073305.68,18225976.85,-17.43,At Risk
+C037,Smith-Bowen Automotive,Distributor,South America,2024,2025,18941013.51,15390927.46,-18.74,At Risk
+C012,Dudley Group Automotive,Distributor,North America,2024,2025,16597261.14,13378339.86,-19.39,At Risk
+C036,Rodriguez-Graham Automotive,Distributor,South America,2024,2025,18403960.0,14347642.64,-22.04,At Risk
+C022,"Watts, Robinson and Nguyen Automotive",Distributor,Europe,2024,2025,20094022.3,15624166.53,-22.24,At Risk
+C041,Ryan PLC Automotive,Distributor,Europe,2024,2025,15017509.39,11599553.22,-22.76,At Risk
+C023,Perez Inc Automotive,Aftermarket,South America,2024,2025,22219340.21,16854948.6,-24.14,At Risk
+C004,Davis and Sons Automotive,Distributor,Asia,2024,2025,15346699.6,10938355.49,-28.73,At Risk
+C025,"Walter, Edwards and Rios Automotive",OEM,North America,2024,2025,24315337.81,16466994.8,-32.28,At Risk
+C049,Hickman Ltd Automotive,OEM,Asia,2024,2025,19886595.09,13379863.83,-32.72,At Risk
+C033,"Ferrell, Rice and Maddox Automotive",Distributor,Europe,2024,2025,19393504.68,12413987.3,-35.99,At Risk
+C005,"Guzman, Hoffman and Baldwin Automotive",OEM,South America,2024,2025,18577543.39,11668576.32,-37.19,At Risk

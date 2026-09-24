@@ -1,262 +1,138 @@
 # Demand Forecasting & Sales Operations Analytics
 
-## Project Overview
+An end-to-end portfolio project connecting **Python forecasting, SQL analysis, and Power BI** to evaluate monthly demand and support sales operations planning.
 
-This is an end-to-end predictive analytics and business intelligence portfolio project focused on demand forecasting, sales performance, customer intelligence, and operational efficiency.
+**Main result:** Random Forest reduced final-test MAE by **26.23% versus Naive Forecast** and **19.44% versus Seasonal Naive** across 32 product-region series. The project uses synthetic sales data; results demonstrate the analytical workflow rather than real business impact.
 
-The project combines **Python, machine learning, SQL, and Power BI** to move from raw sales transactions to demand forecasts and business decision support.
+[Forecasting notebook](Python/demand_forecasting.ipynb) | [Model benchmark](outputs/sql/model_benchmark.csv) | [SQL analysis](SQL/business_analysis.sql) | [Power BI project](powerbi/demand_forecasting.pbip)
 
-Key components include:
+## Final Model Evaluation & Benchmarking
 
-- Built monthly demand data at the **Product × Region** level from transaction-level sales orders.
-- Engineered lag, rolling-average, seasonality, and time-trend features for demand forecasting.
-- Used time-series cross-validation to compare and tune forecasting models while avoiding future data leakage.
-- Selected a **Random Forest** model that achieved **34.19% WAPE** on the final test period, outperforming naive forecasting benchmarks.
-- Used SQL to analyze sales growth, customer performance, forecast accuracy, planning exceptions, and fulfillment performance.
-- Built a four-page Power BI dashboard to communicate model performance and business insights.
+All three models are evaluated on the **same 192 monthly product-region observations, July-December 2025**. Lower values are better.
 
-**Power BI Report:** [Download PBIX](powerbi/Demand_Forecasting_Sales_Analytics.pbix)
+| Model | Forecast rule | MAE (units) | RMSE (units) | WAPE |
+| --- | --- | ---: | ---: | ---: |
+| **Random Forest** | Trained on historical demand features | **3,141.40** | **4,245.65** | **34.19%** |
+| Seasonal Naive | `Demand_Lag_12` | 3,899.38 | 4,910.20 | 42.44% |
+| Naive Forecast | `Demand_Lag_1` | 4,258.60 | 5,450.38 | 46.35% |
 
-**Dataset:** Synthetic data available in the `data/` directory.
+Relative MAE improvement = `(baseline MAE - model MAE) / baseline MAE`. The dashboard displays Forecast MAE as **3.14K** and RMSE as **4.25K**.
 
-## Business Problem
+These are **historical rolling one-month-ahead test predictions**. Each month uses demand observed before that month, including earlier test months. Model parameters remain fixed. This is not a six-month forecast made in June or a future forecast beyond December 2025.
 
-Sales operations teams need a reliable way to monitor revenue performance, understand customer and product trends, and evaluate whether demand forecasts accurately reflect actual business demand.
+## Business Questions and Workflow
 
-Without an integrated analytics view, it can be difficult to identify revenue trends, customer concentration, regional performance differences, and forecast exceptions that may affect operational planning.
+The project asks whether machine learning improves on simple demand baselines, where forecast errors require planning attention, and how sales, customer, and delivery patterns provide operational context.
 
-This project develops a Power BI analytics solution that integrates sales, customer, product, regional, and demand forecasting data into a unified decision-support dashboard.
-
-## Business Questions
-
-This analysis focuses on four key business questions:
-
-1. **Overall Performance:** How are revenue, order volume, and active customers performing over time and across regions and product lines?
-
-2. **Customer & Sales Analysis:** Which customers, segments, regions, and products contribute most to sales performance?
-
-3. **Demand Forecasting:** How closely does forecast demand match actual demand, and where are the largest forecast errors or biases?
-
-4. **Operational Exceptions:** Which products, regions, or periods require attention due to significant demand or forecast deviations?
-
-## Demand Forecasting Methodology
-
-The forecasting component predicts monthly demand at the **Product × Region** level using historical sales orders.
-
-### Modeling Approach
-
-1. Aggregated transaction-level sales into monthly demand by product and region.
-2. Created historical demand features including:
-   - Lagged demand
-   - Rolling demand averages
-   - Monthly seasonality
-   - Quarter and time-trend features
-3. Preserved chronological order during model development to prevent future data leakage.
-4. Used time-series cross-validation for model selection and hyperparameter tuning.
-5. Compared machine learning forecasts against simple demand forecasting benchmarks.
-6. Reserved July–December 2025 as the final test period.
-
-### Model Selection
-
-The following approaches were evaluated:
-
-- Naive Forecast — previous month's demand
-- Seasonal Naive — demand from the same month one year earlier
-- Random Forest
-- Histogram Gradient Boosting
-
-Random Forest achieved the strongest validation performance and was selected as the final model.
-
-### Final Test Performance
-
-| Model | MAE | RMSE | WAPE |
-|---|---:|---:|---:|
-| Random Forest | 3,141 | 4,246 | 34.19% |
-| Seasonal Naive | 3,899 | 4,910 | 42.44% |
-| Naive Forecast | 4,259 | 5,450 | 46.35% |
-
-The Random Forest reduced WAPE by approximately **26% compared with the previous-month naive forecast** and by approximately **19% compared with the seasonal naive benchmark**.
-
-The final Power BI dashboard uses the Random Forest test predictions to analyze forecast accuracy, forecast bias, and performance differences across products and regions.
-
-## Dashboard Preview
-
-### 1. Executive Overview
-
-![Executive Overview](images/01-executive-overview.png)
-
-### 2. Sales & Customer Intelligence
-
-![Sales & Customer Intelligence](images/02-sales-customer-intelligence.png)
-
-### 3. Demand Forecasting Analytics
-
-![Demand Forecasting Analytics](images/03-demand-forecasting-analytics.png)
-
-### 4. Operational Performance
-
-![Operational Performance](images/04-operational-performance.png)
-
-## Key Insights
-
-- **Sales generated $2.68B in total revenue across 10K orders and 50 active customers**, with an average order value of approximately **$268.1K**.
-
-- **Revenue was concentrated in Distributor and OEM customers**, which generated approximately **$1.33B and $913.2M**, respectively. The top 10 customers accounted for only **22.53% of total revenue**, suggesting relatively low dependence on individual customers.
-
-- **South America was the largest regional market**, generating approximately **$1.03B in revenue**, followed by Europe at **$695.35M**. Asia generated the lowest regional revenue at approximately **$412.56M**.
-
-- **Demand forecasting performance was strong overall**, with **94.94% forecast accuracy** and **5.06% WAPE**. Total forecast demand of **10.36M** was also close to actual demand of **10.34M**.
-
-- **Forecast accuracy varied across product categories and regions despite strong aggregate performance.** Sensor achieved the highest overall category accuracy at **95.51%**, while Control Unit recorded the lowest at **94.47%**. The weakest category-region combination was **Control Unit in South America at 93.78%**, highlighting an area for targeted forecast improvement.
-
-- **Operational execution achieved an 89.05% on-time order rate**, with approximately **8.91K of 10K orders delivered on time**. North America recorded the strongest regional on-time performance at **89.62%**, while Asia was lowest at **87.94%**. Control Unit had the highest delayed-order rate among product categories at **12.43%**, indicating a potential operational bottleneck.
-
-## Data Model
-
-The Power BI semantic model uses a dimensional modeling approach with two primary fact tables: `sales_orders` for transactional sales and operational analysis, and `demand_forecast` for demand forecasting analysis.
-
-Shared dimension tables provide consistent filtering across the analytical model:
-
-### Fact Tables
-
-- **sales_orders** — Order-level transactions used for revenue, customer, and delivery-performance analysis.
-- **demand_forecast** — Actual and forecast demand used for forecast accuracy and error analysis.
-
-### Dimension Tables
-
-- **Calendar** — Date dimension supporting monthly and quarterly analysis.
-- **customers** — Customer attributes and segmentation.
-- **products** — Product category and product line attributes.
-- **regions** — Geographic region attributes.
-
-![Power BI Data Model](images/data-model.png)
-
-## Data Source
-
-This project uses synthetic datasets created for portfolio demonstration purposes. The data simulates sales transactions, customer information, product categories, regional operations, and demand forecasts.
-
-The datasets do not represent actual business performance or contain real customer information.
-
-All five source CSV files are available in the `data/` directory. The Power BI report is available in the `powerbi/` directory.
-
-## Key DAX Measures
-
-The dashboard uses reusable DAX measures to evaluate sales performance, customer activity, operational efficiency, and demand forecasting accuracy. Selected measures are shown below.
-
-### Forecast Accuracy
-
-```DAX
-Forecast Accuracy = 
-1 - [WAPE %]
+```text
+Sales orders + customer/product/region dimensions
+    -> Monthly product-region demand
+    -> Historical features + chronological model selection
+    -> Frozen test predictions + two naive baselines
+    -> SQL benchmarks, segment diagnostics, and operational reports
+    -> Power BI decision-support dashboard
 ```
 
-Measures overall forecasting performance, where a higher value indicates closer alignment between forecast and actual demand.
+- **Data preparation:** 10,000 synthetic orders from January 2023 to December 2025; 8 products, 4 regions, and 50 customers. Aggregation creates 1,152 monthly observations across 32 series.
+- **Prediction:** Python builds lag and rolling features, selects a model using development-period validation, and exports the final test results.
+- **Business analysis:** SQL produces 21 exports covering sales, customer and market intelligence, forecast errors, and delivery operations. Metrics are reconciled against the saved predictions.
+- **Reporting:** Power BI combines transactional sales and forecast facts with shared dimensions. It reads raw CSVs and the frozen prediction file directly; SQL outputs provide reproducible analysis alongside the dashboard.
 
-### WAPE
+## Modeling Decisions
 
-```DAX
-WAPE % = 
-DIVIDE(
-    [Absolute Forecast Error],
-    SUM(demand_forecast[Actual_Demand])
-)
-```
+| Decision | Implementation and purpose |
+| --- | --- |
+| Prediction grain | One monthly demand prediction per product-region pair |
+| Historical features | Demand lags 1, 2, 3, 6, and 12; shifted rolling averages over 3 and 6 months; month, quarter, and time index |
+| Warm-up period | First 12 months provide history; 768 observations remain for modeling |
+| Development set | January 2024-June 2025: 576 observations |
+| Model selection | Three expanding-window, chronological validation folds; MAE-based selection across a mean baseline, Random Forest, and Histogram Gradient Boosting |
+| Final model | Random Forest: 200 trees, maximum depth 12, minimum samples per leaf 3 |
+| Final test | July-December 2025: 192 observations reserved from model selection |
+| Meaningful benchmarks | Previous-month and same-month-last-year demand evaluated on identical test rows |
 
-Calculates Weighted Absolute Percentage Error (WAPE) to measure total forecast error relative to actual demand.
+Features use past demand only. The final test results are frozen; later error analysis is descriptive and does not feed further parameter tuning.
 
-### Forecast Bias
+## Key Findings and Planning Implications
 
-```DAX
-Forecast Bias % =
-DIVIDE(
-    [Total Forecast Demand] - [Total Actual Demand],
-    [Total Actual Demand]
-)
-```
+- **Aggregate improvement is not universal:** Random Forest beats Naive Forecast in 28 of 32 series and Seasonal Naive in 22; it beats both in 19. Segment-level performance matters when prioritizing review.
+- **Accurate totals can hide large local errors:** actual and predicted demand both round to 1.76M, but WAPE is 34.19%. Overforecasts and underforecasts offset in totals; MAE and WAPE retain their magnitude.
+- **Investigate difficult series:** P004-R04 has MAE of approximately 6.96K and WAPE of 63.57%. Its fluctuating monthly demand is a useful planning-review case.
+- **Use orders to explain exceptions cautiously:** P003-R04 demand rose from 22,398 in June to 31,424 in July 2025 while order count rose from 20 to 27. This supports reviewing order activity, but does not establish a promotion or other causal explanation.
 
-Identifies systematic over-forecasting or under-forecasting. Positive values indicate over-forecasting, while negative values indicate under-forecasting.
+See [series comparisons](outputs/sql/series_benchmark_comparison.csv) and [planning exceptions](outputs/sql/planning_exceptions.csv). Exceptions identify forecast deviations; they do not establish stockouts or excess inventory.
 
-### Total Revenue
+## Power BI Dashboard
 
-```DAX
-Total Revenue = 
-SUM(sales_orders[Revenue])
-```
+Open [demand_forecasting.pbip](powerbi/demand_forecasting.pbip). The editable report and TMDL semantic model are included. See [Power BI setup](powerbi/README.md) before refreshing.
 
-Calculates total sales revenue within the current filter context.
+| Page | Analytical purpose |
+| --- | --- |
+| Executive Overview | Revenue, orders, customers, and high-level performance |
+| Sales & Customer Intelligence | Customer concentration, product contribution, and regional trends |
+| Demand Forecasting Analytics | Actual versus predicted demand, MAE, RMSE, WAPE, and baseline comparison |
+| Operational Performance | Delivery performance and operational exceptions |
 
-### Revenue YoY Growth
+The model separates order-level sales from monthly product-region forecasts. Customer-level filters cannot be interpreted as customer-level forecasts. Forecast summaries cover the six-month test window, even when grouped by year.
 
-```DAX
-Revenue YoY Growth % = 
-DIVIDE(
-    [Total Revenue] - [Revenue Previous Year],
-    [Revenue Previous Year]
-)
-```
+<details>
+<summary>Earlier dashboard screenshots (legacy design reference)</summary>
 
-Measures year-over-year revenue growth to evaluate changes in sales performance over time.
+These images predate the updated forecasting pipeline. Forecast values and measures shown here are not the current model evaluation. Updated screenshots still need to be captured from the current Power BI project.
 
-### Active Customers
+![Earlier executive overview](images/01-executive-overview.png)
+![Earlier sales and customer page](images/02-sales-customer-intelligence.png)
+![Earlier demand forecasting page](images/03-demand-forecasting-analytics.png)
+![Earlier operations page](images/04-operational-performance.png)
+![Earlier data model](images/data-model.png)
 
-```DAX
-Active Customers =
-DISTINCTCOUNT(sales_orders[Customer_ID])
-```
-
-Counts distinct customers with order activity within the current filter context.
-
-## Tools & Technologies
-
-### Predictive Analytics
-- Python
-- pandas
-- NumPy
-- scikit-learn
-- Random Forest Regressor
-- HistGradientBoostingRegressor
-- TimeSeriesSplit
-- GridSearchCV
-- Feature Engineering
-- Time-Series Cross-Validation
-
-### Business Analytics
-- SQL
-- DuckDB
-- Window Functions
-- KPI Analysis
-- Forecast Error Analysis
-- Customer & Sales Analytics
-
-### Business Intelligence
-- Power BI
-- DAX
-- Data Modeling
-- Data Visualization
-- Dashboard Design
-
-### Development & Version Control
-- Jupyter Notebook
-- VS Code
-- Git
-- GitHub
+</details>
 
 ## Repository Structure
 
 ```text
-demand-forecasting-sales-analytics/
-├── README.md
-├── images/
-│   ├── 01-executive-overview.png
-│   ├── 02-sales-customer-intelligence.png
-│   ├── 03-demand-forecasting-analytics.png
-│   ├── 04-operational-performance.png
-│   └── data-model.png
-├── powerbi/
-│   └── Demand_Forecasting_Sales_Analytics.pbix
-└── data/
-    ├── customers.csv
-    ├── demand_forecast.csv
-    ├── products.csv
-    ├── regions.csv
-    └── sales_orders.csv
+data/
+  raw/                         Four source CSVs
+  processed/                   Monthly demand and modeling features
+Python/
+  demand_forecasting.ipynb      Preparation, model selection, evaluation, diagnostics
+  run_sql_analysis.py          SQL execution and data/metric consistency checks
+SQL/
+  business_analysis.sql        Business views and export definitions
+  README.md                    Metrics, grain, and output documentation
+outputs/
+  forecasts/                   Frozen model_forecast_results.csv
+  sql/                         21 business-analysis CSV exports
+powerbi/
+  demand_forecasting.pbip       Current project entry point
+  demand_forecasting.Report/    Editable report definition
+  demand_forecasting.SemanticModel/  TMDL model and measures
+images/                        Earlier dashboard screenshots
+archive/                       Legacy forecast CSV and PBIX
+requirements.txt               Pinned analysis dependencies
+```
+
+## Reproduce the Analysis
+
+The saved predictions and SQL exports are included for inspection without retraining. From the repository root, using Python 3.14 and PowerShell:
+
+```powershell
+python -m venv Python/.venv
+./Python/.venv/Scripts/python.exe -m pip install -r requirements.txt
+./Python/.venv/Scripts/python.exe Python/run_sql_analysis.py
+```
+
+The SQL runner uses the frozen predictions, checks source keys, baseline values, actual demand, and error aggregations, then recreates `outputs/database/analytics.duckdb` and the 21 SQL exports. These are data and calculation checks; no model training or tuning occurs.
+
+To inspect modeling, open the notebook in VS Code or Jupyter using this environment. Running the full notebook retrains models and overwrites generated results. Sections 7-8 support diagnostics from saved CSVs without rerunning training.
+
+Power BI requires its `ProjectRoot` parameter to point to the cloned repository. Refresh after setting the path. Local environments, database files, and Power BI caches are excluded from version control.
+
+Metric definitions and aggregation rules are documented in [SQL/README.md](SQL/README.md). WAPE is calculated from total absolute error divided by total actual demand, rather than averaging subgroup percentages.
+
+## Limitations and Next Steps
+
+- Synthetic data and a six-month test window limit conclusions about real-world reliability and longer seasonal patterns.
+- Forecasts use demand history and calendar features; price, promotions, inventory availability, and external demand drivers are not included.
+- The project contains evaluated predictions and reproducible analysis, but no deployed forecasting service, serialized production model, or future forecast output.
+- The next presentation step is to replace legacy screenshots with captures of the current report. A future production phase would need new unseen data, business error tolerances, and a defined refresh/monitoring process.

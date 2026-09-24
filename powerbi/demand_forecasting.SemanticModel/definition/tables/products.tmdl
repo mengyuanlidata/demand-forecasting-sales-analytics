@@ -1,0 +1,41 @@
+table products
+	lineageTag: fbb90818-1ecf-41bc-8c3f-97ae464fee45
+
+	column Product_ID
+		dataType: string
+		lineageTag: e13b1576-6f80-4355-9f20-f3d107f64138
+		summarizeBy: none
+		sourceColumn: Product_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_Category
+		dataType: string
+		lineageTag: b7c34c9c-7cd1-4c03-941c-11aeb3887108
+		summarizeBy: none
+		sourceColumn: Product_Category
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_Line
+		dataType: string
+		lineageTag: 7b7d1c33-7c47-4e22-aa22-ecb09b96b59b
+		summarizeBy: none
+		sourceColumn: Product_Line
+
+		annotation SummarizationSetBy = Automatic
+
+	partition products = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/raw/products.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"Product_ID", type text}, {"Product_Category", type text}, {"Product_Line", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

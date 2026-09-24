@@ -1,0 +1,9 @@
+﻿Product_ID,Product_Category,Product_Line,total_orders,delayed_orders,ordered_units,delayed_units,average_delivery_days,delayed_revenue,delayed_order_rate_pct,delayed_unit_rate_pct,bottleneck_rank
+P008,Control Unit,Automotive Component,1215,151,1276787.0,160424.0,15.89,39955349.95,12.43,12.56,1
+P004,Electronic Module,Automotive Component,1148,136,1168526.0,141202.0,16.15,36185267.27,11.85,12.08,2
+P002,Powertrain,Automotive Component,1208,137,1244035.0,127232.0,16.29,32452711.87,11.34,10.23,3
+P005,Sensor,Automotive Component,1224,136,1275791.0,159488.0,16.22,42342560.59,11.11,12.5,4
+P003,Motor Component,EV Component,1459,160,1536819.0,169979.0,16.27,43344361.68,10.97,11.06,5
+P006,Brake System,Automotive Component,1188,130,1198414.0,124406.0,15.96,32933876.14,10.94,10.38,6
+P001,Battery System,EV Component,1419,136,1456949.0,134879.0,16.12,36846400.87,9.58,9.26,7
+P007,Transmission,Automotive Component,1139,109,1178797.0,119013.0,15.97,33606885.33,9.57,10.1,8

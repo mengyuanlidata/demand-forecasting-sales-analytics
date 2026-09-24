@@ -1,0 +1,4 @@
+/// Local project folder. Change this parameter when moving the project.
+expression ProjectRoot = "C:/Users/circl/Documents/GitHub/demand-forecasting-sales-analytics" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 730a4614-efc2-4ccc-9ece-54f7a688d22c
+

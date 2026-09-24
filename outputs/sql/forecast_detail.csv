@@ -1,0 +1,577 @@
+﻿forecast_month,Product_ID,Region_ID,Actual_Demand,Model,forecast_demand,Product_Category,Product_Line,Region,evaluation_scope,forecast_error,absolute_error,squared_error
+2025-07-01,P001,R01,3906,Naive Forecast,6170.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,2264.0,2264.0,5125696.0
+2025-07-01,P001,R01,3906,Random Forest,6017.7671340165625,Battery System,EV Component,North America,Final test / rolling one-month-ahead,2111.7671340165625,2111.7671340165625,4459560.428312526
+2025-07-01,P001,R01,3906,Seasonal Naive,6193.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,2287.0,2287.0,5230369.0
+2025-07-01,P001,R02,16164,Naive Forecast,13317.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-2847.0,2847.0,8105409.0
+2025-07-01,P001,R02,16164,Random Forest,11063.76110184126,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-5100.238898158739,5100.238898158739,26012436.81829147
+2025-07-01,P001,R02,16164,Seasonal Naive,13842.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-2322.0,2322.0,5391684.0
+2025-07-01,P001,R03,1672,Naive Forecast,6697.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,5025.0,5025.0,25250625.0
+2025-07-01,P001,R03,1672,Random Forest,7401.136085079746,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,5729.136085079746,5729.136085079746,32823000.281362884
+2025-07-01,P001,R03,1672,Seasonal Naive,11627.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,9955.0,9955.0,99102025.0
+2025-07-01,P001,R04,13417,Naive Forecast,11271.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-2146.0,2146.0,4605316.0
+2025-07-01,P001,R04,13417,Random Forest,15253.319605255849,Battery System,EV Component,South America,Final test / rolling one-month-ahead,1836.3196052558487,1836.3196052558487,3372069.692646996
+2025-07-01,P001,R04,13417,Seasonal Naive,8923.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-4494.0,4494.0,20196036.0
+2025-07-01,P002,R01,10436,Naive Forecast,7962.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-2474.0,2474.0,6120676.0
+2025-07-01,P002,R01,10436,Random Forest,7285.875236149895,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-3150.1247638501054,3150.1247638501054,9923286.027821682
+2025-07-01,P002,R01,10436,Seasonal Naive,8866.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-1570.0,1570.0,2464900.0
+2025-07-01,P002,R02,7965,Naive Forecast,6469.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-1496.0,1496.0,2238016.0
+2025-07-01,P002,R02,7965,Random Forest,9279.732883257728,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,1314.7328832577277,1314.7328832577277,1728522.554319178
+2025-07-01,P002,R02,7965,Seasonal Naive,11351.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,3386.0,3386.0,11464996.0
+2025-07-01,P002,R03,6384,Naive Forecast,7994.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,1610.0,1610.0,2592100.0
+2025-07-01,P002,R03,6384,Random Forest,6577.736610759336,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,193.73661075933614,193.73661075933614,37533.874348514524
+2025-07-01,P002,R03,6384,Seasonal Naive,8810.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,2426.0,2426.0,5885476.0
+2025-07-01,P002,R04,15238,Naive Forecast,13792.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-1446.0,1446.0,2090916.0
+2025-07-01,P002,R04,15238,Random Forest,14226.396361817242,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-1011.603638182758,1011.603638182758,1023341.9207845924
+2025-07-01,P002,R04,15238,Seasonal Naive,13114.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-2124.0,2124.0,4511376.0
+2025-07-01,P003,R01,13162,Naive Forecast,8768.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-4394.0,4394.0,19307236.0
+2025-07-01,P003,R01,13162,Random Forest,8125.400018251018,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-5036.599981748982,5036.599981748982,25367339.376153845
+2025-07-01,P003,R01,13162,Seasonal Naive,12481.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-681.0,681.0,463761.0
+2025-07-01,P003,R02,14929,Naive Forecast,12348.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-2581.0,2581.0,6661561.0
+2025-07-01,P003,R02,14929,Random Forest,12200.303923266276,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-2728.696076733724,2728.696076733724,7445782.279182018
+2025-07-01,P003,R02,14929,Seasonal Naive,10329.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-4600.0,4600.0,21160000.0
+2025-07-01,P003,R03,3146,Naive Forecast,7295.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,4149.0,4149.0,17214201.0
+2025-07-01,P003,R03,3146,Random Forest,8199.234487361016,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,5053.234487361016,5053.234487361016,25535178.784254752
+2025-07-01,P003,R03,3146,Seasonal Naive,11838.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,8692.0,8692.0,75550864.0
+2025-07-01,P003,R04,31424,Naive Forecast,22398.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-9026.0,9026.0,81468676.0
+2025-07-01,P003,R04,31424,Random Forest,14682.857356782106,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-16741.142643217892,16741.142643217892,280265857.00056857
+2025-07-01,P003,R04,31424,Seasonal Naive,16523.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-14901.0,14901.0,222039801.0
+2025-07-01,P004,R01,6644,Naive Forecast,4848.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-1796.0,1796.0,3225616.0
+2025-07-01,P004,R01,6644,Random Forest,5178.524014388389,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-1465.4759856116107,1465.4759856116107,2147619.8644043216
+2025-07-01,P004,R01,6644,Seasonal Naive,6748.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,104.0,104.0,10816.0
+2025-07-01,P004,R02,7104,Naive Forecast,6330.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-774.0,774.0,599076.0
+2025-07-01,P004,R02,7104,Random Forest,6447.111279181595,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-656.8887208184051,656.8887208184051,431502.79153844056
+2025-07-01,P004,R02,7104,Seasonal Naive,7494.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,390.0,390.0,152100.0
+2025-07-01,P004,R03,3094,Naive Forecast,10320.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,7226.0,7226.0,52215076.0
+2025-07-01,P004,R03,3094,Random Forest,7985.533383028898,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,4891.533383028898,4891.533383028898,23927098.837286137
+2025-07-01,P004,R03,3094,Seasonal Naive,3051.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-43.0,43.0,1849.0
+2025-07-01,P004,R04,6207,Naive Forecast,7689.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,1482.0,1482.0,2196324.0
+2025-07-01,P004,R04,6207,Random Forest,9780.693297799422,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,3573.693297799422,3573.693297799422,12771283.786736509
+2025-07-01,P004,R04,6207,Seasonal Naive,15220.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,9013.0,9013.0,81234169.0
+2025-07-01,P005,R01,4284,Naive Forecast,3889.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-395.0,395.0,156025.0
+2025-07-01,P005,R01,4284,Random Forest,6031.698777104359,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,1747.6987771043587,1747.6987771043587,3054451.015492071
+2025-07-01,P005,R01,4284,Seasonal Naive,5878.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,1594.0,1594.0,2540836.0
+2025-07-01,P005,R02,4475,Naive Forecast,3126.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-1349.0,1349.0,1819801.0
+2025-07-01,P005,R02,4475,Random Forest,6481.357924027359,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,2006.3579240273593,2006.3579240273593,4025472.119307375
+2025-07-01,P005,R02,4475,Seasonal Naive,12087.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,7612.0,7612.0,57942544.0
+2025-07-01,P005,R03,4545,Naive Forecast,3895.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-650.0,650.0,422500.0
+2025-07-01,P005,R03,4545,Random Forest,4770.146189158067,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,225.1461891580666,225.1461891580666,50690.806492399905
+2025-07-01,P005,R03,4545,Seasonal Naive,3655.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-890.0,890.0,792100.0
+2025-07-01,P005,R04,14274,Naive Forecast,13461.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-813.0,813.0,660969.0
+2025-07-01,P005,R04,14274,Random Forest,13085.294814545216,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-1188.7051854547844,1188.7051854547844,1413020.0179270934
+2025-07-01,P005,R04,14274,Seasonal Naive,15752.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,1478.0,1478.0,2184484.0
+2025-07-01,P006,R01,6950,Naive Forecast,937.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-6013.0,6013.0,36156169.0
+2025-07-01,P006,R01,6950,Random Forest,4790.783136363636,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-2159.216863636364,2159.216863636364,4662217.464211657
+2025-07-01,P006,R01,6950,Seasonal Naive,4145.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-2805.0,2805.0,7868025.0
+2025-07-01,P006,R02,10451,Naive Forecast,15868.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,5417.0,5417.0,29343889.0
+2025-07-01,P006,R02,10451,Random Forest,9029.567212972852,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-1421.4327870271482,1421.4327870271482,2020471.1680357659
+2025-07-01,P006,R02,10451,Seasonal Naive,4020.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-6431.0,6431.0,41357761.0
+2025-07-01,P006,R03,4357,Naive Forecast,2708.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-1649.0,1649.0,2719201.0
+2025-07-01,P006,R03,4357,Random Forest,5231.651911990789,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,874.6519119907889,874.6519119907889,765015.9671491428
+2025-07-01,P006,R03,4357,Seasonal Naive,3576.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-781.0,781.0,609961.0
+2025-07-01,P006,R04,3376,Naive Forecast,15430.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,12054.0,12054.0,145298916.0
+2025-07-01,P006,R04,3376,Random Forest,12598.257079628058,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,9222.257079628058,9222.257079628058,85050025.64274983
+2025-07-01,P006,R04,3376,Seasonal Naive,16025.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,12649.0,12649.0,159997201.0
+2025-07-01,P007,R01,3730,Naive Forecast,5648.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,1918.0,1918.0,3678724.0
+2025-07-01,P007,R01,3730,Random Forest,4375.374610556108,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,645.3746105561077,645.3746105561077,416508.3879504476
+2025-07-01,P007,R01,3730,Seasonal Naive,6055.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,2325.0,2325.0,5405625.0
+2025-07-01,P007,R02,6336,Naive Forecast,7455.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,1119.0,1119.0,1252161.0
+2025-07-01,P007,R02,6336,Random Forest,8265.21284571582,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,1929.2128457158196,1929.2128457158196,3721862.204074931
+2025-07-01,P007,R02,6336,Seasonal Naive,8422.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,2086.0,2086.0,4351396.0
+2025-07-01,P007,R03,9510,Naive Forecast,302.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-9208.0,9208.0,84787264.0
+2025-07-01,P007,R03,9510,Random Forest,5051.294119227991,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-4458.705880772009,4458.705880772009,19880058.131230894
+2025-07-01,P007,R03,9510,Seasonal Naive,8385.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-1125.0,1125.0,1265625.0
+2025-07-01,P007,R04,9075,Naive Forecast,8867.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-208.0,208.0,43264.0
+2025-07-01,P007,R04,9075,Random Forest,12464.288895812524,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,3389.288895812524,3389.288895812524,11487279.219278079
+2025-07-01,P007,R04,9075,Seasonal Naive,12455.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,3380.0,3380.0,11424400.0
+2025-07-01,P008,R01,3169,Naive Forecast,4043.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,874.0,874.0,763876.0
+2025-07-01,P008,R01,3169,Random Forest,6573.189887064322,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,3404.1898870643217,3404.1898870643217,11588508.787191
+2025-07-01,P008,R01,3169,Seasonal Naive,10779.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,7610.0,7610.0,57912100.0
+2025-07-01,P008,R02,10832,Naive Forecast,8048.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-2784.0,2784.0,7750656.0
+2025-07-01,P008,R02,10832,Random Forest,6871.577728235407,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-3960.4222717645926,3960.4222717645926,15684944.570689017
+2025-07-01,P008,R02,10832,Seasonal Naive,7534.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-3298.0,3298.0,10876804.0
+2025-07-01,P008,R03,10127,Naive Forecast,5557.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-4570.0,4570.0,20884900.0
+2025-07-01,P008,R03,10127,Random Forest,7287.105223960013,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-2839.894776039987,2839.894776039987,8065002.338979208
+2025-07-01,P008,R03,10127,Seasonal Naive,2134.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-7993.0,7993.0,63888049.0
+2025-07-01,P008,R04,12345,Naive Forecast,14338.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,1993.0,1993.0,3972049.0
+2025-07-01,P008,R04,12345,Random Forest,12863.633385363988,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,518.633385363988,518.633385363988,268980.58841411094
+2025-07-01,P008,R04,12345,Seasonal Naive,16626.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,4281.0,4281.0,18326961.0
+2025-08-01,P001,R01,13590,Naive Forecast,3906.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-9684.0,9684.0,93779856.0
+2025-08-01,P001,R01,13590,Random Forest,7660.469006281047,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-5929.530993718953,5929.530993718953,35159337.80547368
+2025-08-01,P001,R01,13590,Seasonal Naive,11369.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-2221.0,2221.0,4932841.0
+2025-08-01,P001,R02,8341,Naive Forecast,16164.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,7823.0,7823.0,61199329.0
+2025-08-01,P001,R02,8341,Random Forest,11759.942337392473,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,3418.942337392473,3418.942337392473,11689166.706414705
+2025-08-01,P001,R02,8341,Seasonal Naive,11770.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,3429.0,3429.0,11758041.0
+2025-08-01,P001,R03,15541,Naive Forecast,1672.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-13869.0,13869.0,192349161.0
+2025-08-01,P001,R03,15541,Random Forest,5937.901155464314,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-9603.098844535685,9603.098844535685,92219507.41792262
+2025-08-01,P001,R03,15541,Seasonal Naive,6123.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-9418.0,9418.0,88698724.0
+2025-08-01,P001,R04,15289,Naive Forecast,13417.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-1872.0,1872.0,3504384.0
+2025-08-01,P001,R04,15289,Random Forest,13766.15879298904,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-1522.8412070109607,1522.8412070109607,2319045.3417705996
+2025-08-01,P001,R04,15289,Seasonal Naive,14867.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-422.0,422.0,178084.0
+2025-08-01,P002,R01,5652,Naive Forecast,10436.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,4784.0,4784.0,22886656.0
+2025-08-01,P002,R01,5652,Random Forest,6263.127530123516,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,611.1275301235164,611.1275301235164,373476.85807486944
+2025-08-01,P002,R01,5652,Seasonal Naive,6714.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,1062.0,1062.0,1127844.0
+2025-08-01,P002,R02,11505,Naive Forecast,7965.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-3540.0,3540.0,12531600.0
+2025-08-01,P002,R02,11505,Random Forest,10480.620673201798,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-1024.3793267982019,1024.3793267982019,1049353.0051715372
+2025-08-01,P002,R02,11505,Seasonal Naive,6654.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-4851.0,4851.0,23532201.0
+2025-08-01,P002,R03,5717,Naive Forecast,6384.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,667.0,667.0,444889.0
+2025-08-01,P002,R03,5717,Random Forest,6669.004908271691,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,952.0049082716914,952.0049082716914,906313.3453733916
+2025-08-01,P002,R03,5717,Seasonal Naive,6133.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,416.0,416.0,173056.0
+2025-08-01,P002,R04,6928,Naive Forecast,15238.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,8310.0,8310.0,69056100.0
+2025-08-01,P002,R04,6928,Random Forest,13376.29887349184,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,6448.29887349184,6448.29887349184,41580558.36187613
+2025-08-01,P002,R04,6928,Seasonal Naive,7445.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,517.0,517.0,267289.0
+2025-08-01,P003,R01,5048,Naive Forecast,13162.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,8114.0,8114.0,65836996.0
+2025-08-01,P003,R01,5048,Random Forest,10529.19662507131,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,5481.19662507131,5481.19662507131,30043516.44269312
+2025-08-01,P003,R01,5048,Seasonal Naive,7571.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,2523.0,2523.0,6365529.0
+2025-08-01,P003,R02,8786,Naive Forecast,14929.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,6143.0,6143.0,37736449.0
+2025-08-01,P003,R02,8786,Random Forest,11881.549279461024,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,3095.5492794610236,3095.5492794610236,9582425.341571663
+2025-08-01,P003,R02,8786,Seasonal Naive,11057.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,2271.0,2271.0,5157441.0
+2025-08-01,P003,R03,7063,Naive Forecast,3146.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-3917.0,3917.0,15342889.0
+2025-08-01,P003,R03,7063,Random Forest,6262.142556273333,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-800.857443726667,800.857443726667,641372.6451724117
+2025-08-01,P003,R03,7063,Seasonal Naive,4697.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-2366.0,2366.0,5597956.0
+2025-08-01,P003,R04,13825,Naive Forecast,31424.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,17599.0,17599.0,309724801.0
+2025-08-01,P003,R04,13825,Random Forest,15036.879974927862,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,1211.8799749278623,1211.8799749278623,1468653.0736311562
+2025-08-01,P003,R04,13825,Seasonal Naive,22816.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,8991.0,8991.0,80838081.0
+2025-08-01,P004,R01,5179,Naive Forecast,6644.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,1465.0,1465.0,2146225.0
+2025-08-01,P004,R01,5179,Random Forest,6222.109627580816,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,1043.1096275808159,1043.1096275808159,1088077.6951517884
+2025-08-01,P004,R01,5179,Seasonal Naive,7324.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,2145.0,2145.0,4601025.0
+2025-08-01,P004,R02,16181,Naive Forecast,7104.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-9077.0,9077.0,82391929.0
+2025-08-01,P004,R02,16181,Random Forest,7286.717672237657,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-8894.282327762343,8894.282327762343,79108258.12594552
+2025-08-01,P004,R02,16181,Seasonal Naive,9912.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-6269.0,6269.0,39300361.0
+2025-08-01,P004,R03,4661,Naive Forecast,3094.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-1567.0,1567.0,2455489.0
+2025-08-01,P004,R03,4661,Random Forest,7358.752793858267,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,2697.752793858267,2697.752793858267,7277870.136770085
+2025-08-01,P004,R03,4661,Seasonal Naive,4468.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-193.0,193.0,37249.0
+2025-08-01,P004,R04,13092,Naive Forecast,6207.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-6885.0,6885.0,47403225.0
+2025-08-01,P004,R04,13092,Random Forest,10434.076865925745,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-2657.9231340742554,2657.9231340742554,7064555.386647112
+2025-08-01,P004,R04,13092,Seasonal Naive,11591.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-1501.0,1501.0,2253001.0
+2025-08-01,P005,R01,12247,Naive Forecast,4284.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-7963.0,7963.0,63409369.0
+2025-08-01,P005,R01,12247,Random Forest,5647.537298354424,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-6599.462701645576,6599.462701645576,43552907.950411126
+2025-08-01,P005,R01,12247,Seasonal Naive,7231.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-5016.0,5016.0,25160256.0
+2025-08-01,P005,R02,13253,Naive Forecast,4475.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-8778.0,8778.0,77053284.0
+2025-08-01,P005,R02,13253,Random Forest,6097.676707424517,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-7155.323292575483,7155.323292575483,51198651.42127325
+2025-08-01,P005,R02,13253,Seasonal Naive,11793.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-1460.0,1460.0,2131600.0
+2025-08-01,P005,R03,2509,Naive Forecast,4545.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,2036.0,2036.0,4145296.0
+2025-08-01,P005,R03,2509,Random Forest,5610.977685023308,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,3101.9776850233084,3101.9776850233084,9622265.558382563
+2025-08-01,P005,R03,2509,Seasonal Naive,10851.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,8342.0,8342.0,69588964.0
+2025-08-01,P005,R04,7711,Naive Forecast,14274.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,6563.0,6563.0,43072969.0
+2025-08-01,P005,R04,7711,Random Forest,10949.658622039724,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,3238.658622039724,3238.658622039724,10488909.670112243
+2025-08-01,P005,R04,7711,Seasonal Naive,10326.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,2615.0,2615.0,6838225.0
+2025-08-01,P006,R01,3649,Naive Forecast,6950.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,3301.0,3301.0,10896601.0
+2025-08-01,P006,R01,3649,Random Forest,5169.240068542569,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,1520.2400685425691,1520.2400685425691,2311129.866002315
+2025-08-01,P006,R01,3649,Seasonal Naive,6894.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,3245.0,3245.0,10530025.0
+2025-08-01,P006,R02,10946,Naive Forecast,10451.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-495.0,495.0,245025.0
+2025-08-01,P006,R02,10946,Random Forest,9964.257867285489,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-981.7421327145112,981.7421327145112,963817.6151468368
+2025-08-01,P006,R02,10946,Seasonal Naive,5686.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-5260.0,5260.0,27667600.0
+2025-08-01,P006,R03,8928,Naive Forecast,4357.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-4571.0,4571.0,20894041.0
+2025-08-01,P006,R03,8928,Random Forest,5104.076393284582,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-3823.923606715418,3823.923606715418,14622391.74999545
+2025-08-01,P006,R03,8928,Seasonal Naive,8295.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-633.0,633.0,400689.0
+2025-08-01,P006,R04,5272,Naive Forecast,3376.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-1896.0,1896.0,3594816.0
+2025-08-01,P006,R04,5272,Random Forest,13705.56114806027,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,8433.56114806027,8433.56114806027,71124953.63807164
+2025-08-01,P006,R04,5272,Seasonal Naive,17535.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,12263.0,12263.0,150381169.0
+2025-08-01,P007,R01,7583,Naive Forecast,3730.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-3853.0,3853.0,14845609.0
+2025-08-01,P007,R01,7583,Random Forest,4700.739050699301,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-2882.2609493006994,2882.2609493006994,8307428.179863769
+2025-08-01,P007,R01,7583,Seasonal Naive,4840.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-2743.0,2743.0,7524049.0
+2025-08-01,P007,R02,3641,Naive Forecast,6336.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,2695.0,2695.0,7263025.0
+2025-08-01,P007,R02,3641,Random Forest,9126.354923896488,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,5485.354923896488,5485.354923896488,30089118.641115446
+2025-08-01,P007,R02,3641,Seasonal Naive,12942.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,9301.0,9301.0,86508601.0
+2025-08-01,P007,R03,1817,Naive Forecast,9510.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,7693.0,7693.0,59182249.0
+2025-08-01,P007,R03,1817,Random Forest,4447.205482309358,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,2630.2054823093576,2630.2054823093576,6917980.879170201
+2025-08-01,P007,R03,1817,Seasonal Naive,7622.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,5805.0,5805.0,33698025.0
+2025-08-01,P007,R04,9809,Naive Forecast,9075.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-734.0,734.0,538756.0
+2025-08-01,P007,R04,9809,Random Forest,14150.199875776998,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,4341.199875776998,4341.199875776998,18846016.361446224
+2025-08-01,P007,R04,9809,Seasonal Naive,8995.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-814.0,814.0,662596.0
+2025-08-01,P008,R01,3893,Naive Forecast,3169.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-724.0,724.0,524176.0
+2025-08-01,P008,R01,3893,Random Forest,5316.005014083141,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,1423.0050140831408,1423.0050140831408,2024943.2701057598
+2025-08-01,P008,R01,3893,Seasonal Naive,4764.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,871.0,871.0,758641.0
+2025-08-01,P008,R02,11121,Naive Forecast,10832.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-289.0,289.0,83521.0
+2025-08-01,P008,R02,11121,Random Forest,7536.817319277949,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-3584.1826807220514,3584.1826807220514,12846365.48878791
+2025-08-01,P008,R02,11121,Seasonal Naive,16629.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,5508.0,5508.0,30338064.0
+2025-08-01,P008,R03,6378,Naive Forecast,10127.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,3749.0,3749.0,14055001.0
+2025-08-01,P008,R03,6378,Random Forest,6691.642596447754,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,313.64259644775393,313.64259644775393,98371.67830648863
+2025-08-01,P008,R03,6378,Seasonal Naive,4749.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-1629.0,1629.0,2653641.0
+2025-08-01,P008,R04,15982,Naive Forecast,12345.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-3637.0,3637.0,13227769.0
+2025-08-01,P008,R04,15982,Random Forest,13591.602021824752,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-2390.3979781752478,2390.3979781752478,5714002.494064312
+2025-08-01,P008,R04,15982,Seasonal Naive,9320.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-6662.0,6662.0,44382244.0
+2025-09-01,P001,R01,9236,Naive Forecast,13590.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,4354.0,4354.0,18957316.0
+2025-09-01,P001,R01,9236,Random Forest,7052.833245785703,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-2183.166754214297,2183.166754214297,4766217.076706588
+2025-09-01,P001,R01,9236,Seasonal Naive,5908.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-3328.0,3328.0,11075584.0
+2025-09-01,P001,R02,12766,Naive Forecast,8341.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-4425.0,4425.0,19580625.0
+2025-09-01,P001,R02,12766,Random Forest,12141.059153138523,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-624.9408468614765,624.9408468614765,390551.06207593944
+2025-09-01,P001,R02,12766,Seasonal Naive,11121.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-1645.0,1645.0,2706025.0
+2025-09-01,P001,R03,10957,Naive Forecast,15541.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,4584.0,4584.0,21013056.0
+2025-09-01,P001,R03,10957,Random Forest,7370.083770799121,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-3586.9162292008787,3586.9162292008787,12865968.03530465
+2025-09-01,P001,R03,10957,Seasonal Naive,7048.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-3909.0,3909.0,15280281.0
+2025-09-01,P001,R04,13922,Naive Forecast,15289.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,1367.0,1367.0,1868689.0
+2025-09-01,P001,R04,13922,Random Forest,13859.046513124304,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-62.9534868756964,62.9534868756964,3963.1415098084785
+2025-09-01,P001,R04,13922,Seasonal Naive,18535.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,4613.0,4613.0,21279769.0
+2025-09-01,P002,R01,2160,Naive Forecast,5652.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,3492.0,3492.0,12194064.0
+2025-09-01,P002,R01,2160,Random Forest,6791.967695505605,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,4631.967695505605,4631.967695505605,21455124.732207503
+2025-09-01,P002,R01,2160,Seasonal Naive,12959.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,10799.0,10799.0,116618401.0
+2025-09-01,P002,R02,6727,Naive Forecast,11505.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,4778.0,4778.0,22829284.0
+2025-09-01,P002,R02,6727,Random Forest,12929.466468090195,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,6202.466468090195,6202.466468090195,38470590.28778326
+2025-09-01,P002,R02,6727,Seasonal Naive,12983.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,6256.0,6256.0,39137536.0
+2025-09-01,P002,R03,9572,Naive Forecast,5717.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-3855.0,3855.0,14861025.0
+2025-09-01,P002,R03,9572,Random Forest,5888.693608048622,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-3683.306391951378,3683.306391951378,13566745.976989878
+2025-09-01,P002,R03,9572,Seasonal Naive,5169.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-4403.0,4403.0,19386409.0
+2025-09-01,P002,R04,13134,Naive Forecast,6928.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-6206.0,6206.0,38514436.0
+2025-09-01,P002,R04,13134,Random Forest,13782.128591791974,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,648.128591791974,648.128591791974,420070.6714982473
+2025-09-01,P002,R04,13134,Seasonal Naive,6505.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-6629.0,6629.0,43943641.0
+2025-09-01,P003,R01,9613,Naive Forecast,5048.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-4565.0,4565.0,20839225.0
+2025-09-01,P003,R01,9613,Random Forest,8018.6416728036675,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-1594.3583271963325,1594.3583271963325,2541978.475500288
+2025-09-01,P003,R01,9613,Seasonal Naive,3887.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-5726.0,5726.0,32787076.0
+2025-09-01,P003,R02,17143,Naive Forecast,8786.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-8357.0,8357.0,69839449.0
+2025-09-01,P003,R02,17143,Random Forest,11982.885297632916,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-5160.114702367084,5160.114702367084,26626783.741584938
+2025-09-01,P003,R02,17143,Seasonal Naive,12162.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-4981.0,4981.0,24810361.0
+2025-09-01,P003,R03,7599,Naive Forecast,7063.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-536.0,536.0,287296.0
+2025-09-01,P003,R03,7599,Random Forest,7172.662040859057,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-426.337959140943,426.337959140943,181764.05540446436
+2025-09-01,P003,R03,7599,Seasonal Naive,10891.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,3292.0,3292.0,10837264.0
+2025-09-01,P003,R04,17786,Naive Forecast,13825.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-3961.0,3961.0,15689521.0
+2025-09-01,P003,R04,17786,Random Forest,13932.27556444944,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-3853.724435550561,3853.724435550561,14851192.02515949
+2025-09-01,P003,R04,17786,Seasonal Naive,16385.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-1401.0,1401.0,1962801.0
+2025-09-01,P004,R01,8446,Naive Forecast,5179.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-3267.0,3267.0,10673289.0
+2025-09-01,P004,R01,8446,Random Forest,6744.902605223208,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-1701.0973947767916,1701.0973947767916,2893732.3465163875
+2025-09-01,P004,R01,8446,Seasonal Naive,8407.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-39.0,39.0,1521.0
+2025-09-01,P004,R02,9286,Naive Forecast,16181.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,6895.0,6895.0,47541025.0
+2025-09-01,P004,R02,9286,Random Forest,9279.2230513653,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-6.776948634700602,6.776948634700602,45.92703279737036
+2025-09-01,P004,R02,9286,Seasonal Naive,11895.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,2609.0,2609.0,6806881.0
+2025-09-01,P004,R03,0,Naive Forecast,4661.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,4661.0,4661.0,21724921.0
+2025-09-01,P004,R03,0,Random Forest,7515.063712814963,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,7515.063712814963,7515.063712814963,56476182.60766821
+2025-09-01,P004,R03,0,Seasonal Naive,2386.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,2386.0,2386.0,5692996.0
+2025-09-01,P004,R04,5721,Naive Forecast,13092.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,7371.0,7371.0,54331641.0
+2025-09-01,P004,R04,5721,Random Forest,13187.413499281223,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,7466.413499281223,7466.413499281223,55747330.54224888
+2025-09-01,P004,R04,5721,Seasonal Naive,16135.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,10414.0,10414.0,108451396.0
+2025-09-01,P005,R01,10962,Naive Forecast,12247.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,1285.0,1285.0,1651225.0
+2025-09-01,P005,R01,10962,Random Forest,6773.579113827066,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-4188.420886172934,4188.420886172934,17542869.519729666
+2025-09-01,P005,R01,10962,Seasonal Naive,6260.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-4702.0,4702.0,22108804.0
+2025-09-01,P005,R02,8527,Naive Forecast,13253.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,4726.0,4726.0,22335076.0
+2025-09-01,P005,R02,8527,Random Forest,6249.293690470227,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-2277.7063095297726,2277.7063095297726,5187946.032471736
+2025-09-01,P005,R02,8527,Seasonal Naive,6003.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-2524.0,2524.0,6370576.0
+2025-09-01,P005,R03,3485,Naive Forecast,2509.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-976.0,976.0,952576.0
+2025-09-01,P005,R03,3485,Random Forest,5489.202919857921,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,2004.2029198579212,2004.2029198579212,4016829.343967017
+2025-09-01,P005,R03,3485,Seasonal Naive,4956.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,1471.0,1471.0,2163841.0
+2025-09-01,P005,R04,23193,Naive Forecast,7711.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-15482.0,15482.0,239692324.0
+2025-09-01,P005,R04,23193,Random Forest,13064.995285200914,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-10128.004714799086,10128.004714799086,102576479.50299253
+2025-09-01,P005,R04,23193,Seasonal Naive,18481.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-4712.0,4712.0,22202944.0
+2025-09-01,P006,R01,3630,Naive Forecast,3649.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,19.0,19.0,361.0
+2025-09-01,P006,R01,3630,Random Forest,4317.843628080253,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,687.8436280802534,687.8436280802534,473128.85669060604
+2025-09-01,P006,R01,3630,Seasonal Naive,5772.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,2142.0,2142.0,4588164.0
+2025-09-01,P006,R02,8651,Naive Forecast,10946.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,2295.0,2295.0,5267025.0
+2025-09-01,P006,R02,8651,Random Forest,10263.329673021424,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,1612.3296730214242,1612.3296730214242,2599606.974505373
+2025-09-01,P006,R02,8651,Seasonal Naive,10655.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,2004.0,2004.0,4016016.0
+2025-09-01,P006,R03,2610,Naive Forecast,8928.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,6318.0,6318.0,39917124.0
+2025-09-01,P006,R03,2610,Random Forest,6238.378973845599,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,3628.378973845599,3628.378973845599,13165133.977844842
+2025-09-01,P006,R03,2610,Seasonal Naive,8856.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,6246.0,6246.0,39012516.0
+2025-09-01,P006,R04,13738,Naive Forecast,5272.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-8466.0,8466.0,71673156.0
+2025-09-01,P006,R04,13738,Random Forest,14002.995210317453,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,264.9952103174528,264.9952103174528,70222.46149119105
+2025-09-01,P006,R04,13738,Seasonal Naive,17775.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,4037.0,4037.0,16297369.0
+2025-09-01,P007,R01,11861,Naive Forecast,7583.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-4278.0,4278.0,18301284.0
+2025-09-01,P007,R01,11861,Random Forest,7751.434951420719,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-4109.565048579281,4109.565048579281,16888524.88850443
+2025-09-01,P007,R01,11861,Seasonal Naive,8621.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-3240.0,3240.0,10497600.0
+2025-09-01,P007,R02,9445,Naive Forecast,3641.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-5804.0,5804.0,33686416.0
+2025-09-01,P007,R02,9445,Random Forest,7766.703609617817,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-1678.2963903821828,1678.2963903821828,2816678.7739698645
+2025-09-01,P007,R02,9445,Seasonal Naive,6193.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-3252.0,3252.0,10575504.0
+2025-09-01,P007,R03,4513,Naive Forecast,1817.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-2696.0,2696.0,7268416.0
+2025-09-01,P007,R03,4513,Random Forest,5720.231749639251,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,1207.2317496392507,1207.2317496392507,1457408.4973370463
+2025-09-01,P007,R03,4513,Seasonal Naive,602.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-3911.0,3911.0,15295921.0
+2025-09-01,P007,R04,7724,Naive Forecast,9809.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,2085.0,2085.0,4347225.0
+2025-09-01,P007,R04,7724,Random Forest,14167.383874790528,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,6443.383874790528,6443.383874790528,41517195.7579106
+2025-09-01,P007,R04,7724,Seasonal Naive,11718.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,3994.0,3994.0,15952036.0
+2025-09-01,P008,R01,7808,Naive Forecast,3893.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-3915.0,3915.0,15327225.0
+2025-09-01,P008,R01,7808,Random Forest,5172.876277181152,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-2635.1237228188484,2635.1237228188484,6943877.034562667
+2025-09-01,P008,R01,7808,Seasonal Naive,8870.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,1062.0,1062.0,1127844.0
+2025-09-01,P008,R02,10313,Naive Forecast,11121.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,808.0,808.0,652864.0
+2025-09-01,P008,R02,10313,Random Forest,9111.403817945944,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-1201.596182054056,1201.596182054056,1443833.3847268843
+2025-09-01,P008,R02,10313,Seasonal Naive,21418.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,11105.0,11105.0,123321025.0
+2025-09-01,P008,R03,1764,Naive Forecast,6378.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,4614.0,4614.0,21288996.0
+2025-09-01,P008,R03,1764,Random Forest,6717.533442819545,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,4953.533442819545,4953.533442819545,24537493.56913165
+2025-09-01,P008,R03,1764,Seasonal Naive,3144.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,1380.0,1380.0,1904400.0
+2025-09-01,P008,R04,7396,Naive Forecast,15982.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,8586.0,8586.0,73719396.0
+2025-09-01,P008,R04,7396,Random Forest,14409.114553306346,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,7013.114553306346,7013.114553306346,49183775.737797275
+2025-09-01,P008,R04,7396,Seasonal Naive,14703.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,7307.0,7307.0,53392249.0
+2025-10-01,P001,R01,5834,Naive Forecast,9236.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,3402.0,3402.0,11573604.0
+2025-10-01,P001,R01,5834,Random Forest,7498.23982374062,Battery System,EV Component,North America,Final test / rolling one-month-ahead,1664.2398237406196,1664.2398237406196,2769694.1909242086
+2025-10-01,P001,R01,5834,Seasonal Naive,11360.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,5526.0,5526.0,30536676.0
+2025-10-01,P001,R02,11017,Naive Forecast,12766.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,1749.0,1749.0,3059001.0
+2025-10-01,P001,R02,11017,Random Forest,15096.92334232299,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,4079.9233423229907,4079.9233423229907,16645774.479232004
+2025-10-01,P001,R02,11017,Seasonal Naive,12421.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,1404.0,1404.0,1971216.0
+2025-10-01,P001,R03,8080,Naive Forecast,10957.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,2877.0,2877.0,8277129.0
+2025-10-01,P001,R03,8080,Random Forest,7471.643782265252,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-608.3562177347476,608.3562177347476,370097.2876565276
+2025-10-01,P001,R03,8080,Seasonal Naive,5587.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-2493.0,2493.0,6215049.0
+2025-10-01,P001,R04,22560,Naive Forecast,13922.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-8638.0,8638.0,74615044.0
+2025-10-01,P001,R04,22560,Random Forest,13260.78141277882,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-9299.21858722118,9299.21858722118,86475466.33291987
+2025-10-01,P001,R04,22560,Seasonal Naive,20858.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-1702.0,1702.0,2896804.0
+2025-10-01,P002,R01,6196,Naive Forecast,2160.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-4036.0,4036.0,16289296.0
+2025-10-01,P002,R01,6196,Random Forest,7403.533946414766,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,1207.5339464147664,1207.5339464147664,1458138.23174402
+2025-10-01,P002,R01,6196,Seasonal Naive,10396.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,4200.0,4200.0,17640000.0
+2025-10-01,P002,R02,2473,Naive Forecast,6727.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,4254.0,4254.0,18096516.0
+2025-10-01,P002,R02,2473,Random Forest,8703.211387631527,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,6230.211387631527,6230.211387631527,38815533.93457356
+2025-10-01,P002,R02,2473,Seasonal Naive,10297.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,7824.0,7824.0,61214976.0
+2025-10-01,P002,R03,7424,Naive Forecast,9572.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,2148.0,2148.0,4613904.0
+2025-10-01,P002,R03,7424,Random Forest,7442.1876628173395,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,18.187662817339515,18.187662817339515,330.79107875723435
+2025-10-01,P002,R03,7424,Seasonal Naive,6735.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-689.0,689.0,474721.0
+2025-10-01,P002,R04,18955,Naive Forecast,13134.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-5821.0,5821.0,33884041.0
+2025-10-01,P002,R04,18955,Random Forest,16673.050036045934,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-2281.9499639540663,2281.9499639540663,5207295.637989964
+2025-10-01,P002,R04,18955,Seasonal Naive,20640.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,1685.0,1685.0,2839225.0
+2025-10-01,P003,R01,13679,Naive Forecast,9613.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-4066.0,4066.0,16532356.0
+2025-10-01,P003,R01,13679,Random Forest,10559.24825868576,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-3119.7517413142396,3119.7517413142396,9732850.92743323
+2025-10-01,P003,R01,13679,Seasonal Naive,9982.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-3697.0,3697.0,13667809.0
+2025-10-01,P003,R02,20362,Naive Forecast,17143.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-3219.0,3219.0,10361961.0
+2025-10-01,P003,R02,20362,Random Forest,14918.315785865563,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-5443.684214134437,5443.684214134437,29633697.82321646
+2025-10-01,P003,R02,20362,Seasonal Naive,14130.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-6232.0,6232.0,38837824.0
+2025-10-01,P003,R03,6281,Naive Forecast,7599.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,1318.0,1318.0,1737124.0
+2025-10-01,P003,R03,6281,Random Forest,7197.543133813888,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,916.5431338138878,916.5431338138878,840051.3161413823
+2025-10-01,P003,R03,6281,Seasonal Naive,13778.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,7497.0,7497.0,56205009.0
+2025-10-01,P003,R04,26405,Naive Forecast,17786.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-8619.0,8619.0,74287161.0
+2025-10-01,P003,R04,26405,Random Forest,16074.097480755368,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-10330.902519244632,10330.902519244632,106727546.86213507
+2025-10-01,P003,R04,26405,Seasonal Naive,19374.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-7031.0,7031.0,49434961.0
+2025-10-01,P004,R01,6971,Naive Forecast,8446.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,1475.0,1475.0,2175625.0
+2025-10-01,P004,R01,6971,Random Forest,8251.922589549567,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,1280.9225895495674,1280.9225895495674,1640762.6804183696
+2025-10-01,P004,R01,6971,Seasonal Naive,11569.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,4598.0,4598.0,21141604.0
+2025-10-01,P004,R02,9976,Naive Forecast,9286.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-690.0,690.0,476100.0
+2025-10-01,P004,R02,9976,Random Forest,9694.987785632253,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-281.0122143677472,281.0122143677472,78967.86462386472
+2025-10-01,P004,R02,9976,Seasonal Naive,9252.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-724.0,724.0,524176.0
+2025-10-01,P004,R03,6061,Naive Forecast,0.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-6061.0,6061.0,36735721.0
+2025-10-01,P004,R03,6061,Random Forest,6360.279894718594,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,299.2798947185938,299.2798947185938,89568.4553827726
+2025-10-01,P004,R03,6061,Seasonal Naive,9452.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,3391.0,3391.0,11498881.0
+2025-10-01,P004,R04,16810,Naive Forecast,5721.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-11089.0,11089.0,122965921.0
+2025-10-01,P004,R04,16810,Random Forest,8819.47405074555,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-7990.52594925445,7990.52594925445,63848504.94570873
+2025-10-01,P004,R04,16810,Seasonal Naive,12866.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-3944.0,3944.0,15555136.0
+2025-10-01,P005,R01,7559,Naive Forecast,10962.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,3403.0,3403.0,11580409.0
+2025-10-01,P005,R01,7559,Random Forest,7283.233771401552,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-275.7662285984479,275.7662285984479,76047.01283541144
+2025-10-01,P005,R01,7559,Seasonal Naive,4824.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,-2735.0,2735.0,7480225.0
+2025-10-01,P005,R02,9988,Naive Forecast,8527.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-1461.0,1461.0,2134521.0
+2025-10-01,P005,R02,9988,Random Forest,6595.65363273056,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-3392.3463672694397,3392.3463672694397,11508013.875526164
+2025-10-01,P005,R02,9988,Seasonal Naive,8324.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-1664.0,1664.0,2768896.0
+2025-10-01,P005,R03,8232,Naive Forecast,3485.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-4747.0,4747.0,22534009.0
+2025-10-01,P005,R03,8232,Random Forest,7251.583256327002,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-980.4167436729977,980.4167436729977,961216.9912743644
+2025-10-01,P005,R03,8232,Seasonal Naive,12395.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,4163.0,4163.0,17330569.0
+2025-10-01,P005,R04,10801,Naive Forecast,23193.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,12392.0,12392.0,153561664.0
+2025-10-01,P005,R04,10801,Random Forest,16859.037102633472,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,6058.037102633472,6058.037102633472,36699813.53688376
+2025-10-01,P005,R04,10801,Seasonal Naive,18044.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,7243.0,7243.0,52461049.0
+2025-10-01,P006,R01,5491,Naive Forecast,3630.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-1861.0,1861.0,3463321.0
+2025-10-01,P006,R01,5491,Random Forest,5167.018030136533,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-323.9819698634674,323.9819698634674,104964.3167966127
+2025-10-01,P006,R01,5491,Seasonal Naive,5797.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,306.0,306.0,93636.0
+2025-10-01,P006,R02,7239,Naive Forecast,8651.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,1412.0,1412.0,1993744.0
+2025-10-01,P006,R02,7239,Random Forest,9419.25857522692,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,2180.2585752269206,2180.2585752269206,4753527.454850522
+2025-10-01,P006,R02,7239,Seasonal Naive,3770.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-3469.0,3469.0,12033961.0
+2025-10-01,P006,R03,7036,Naive Forecast,2610.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-4426.0,4426.0,19589476.0
+2025-10-01,P006,R03,7036,Random Forest,5647.803608058608,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-1388.196391941392,1388.196391941392,1927089.222599099
+2025-10-01,P006,R03,7036,Seasonal Naive,5558.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-1478.0,1478.0,2184484.0
+2025-10-01,P006,R04,12074,Naive Forecast,13738.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,1664.0,1664.0,2768896.0
+2025-10-01,P006,R04,12074,Random Forest,12901.952176918949,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,827.9521769189487,827.9521769189487,685504.8072648261
+2025-10-01,P006,R04,12074,Seasonal Naive,11014.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-1060.0,1060.0,1123600.0
+2025-10-01,P007,R01,7628,Naive Forecast,11861.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,4233.0,4233.0,17918289.0
+2025-10-01,P007,R01,7628,Random Forest,5891.210150322197,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-1736.7898496778034,1736.7898496778034,3016438.981943847
+2025-10-01,P007,R01,7628,Seasonal Naive,7386.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-242.0,242.0,58564.0
+2025-10-01,P007,R02,7126,Naive Forecast,9445.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,2319.0,2319.0,5377761.0
+2025-10-01,P007,R02,7126,Random Forest,7037.45501370639,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-88.54498629361024,88.54498629361024,7840.214597735625
+2025-10-01,P007,R02,7126,Seasonal Naive,6576.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-550.0,550.0,302500.0
+2025-10-01,P007,R03,5512,Naive Forecast,4513.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-999.0,999.0,998001.0
+2025-10-01,P007,R03,5512,Random Forest,4566.15882705914,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-945.8411729408599,945.8411729408599,894615.5244301417
+2025-10-01,P007,R03,5512,Seasonal Naive,7552.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,2040.0,2040.0,4161600.0
+2025-10-01,P007,R04,18449,Naive Forecast,7724.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-10725.0,10725.0,115025625.0
+2025-10-01,P007,R04,18449,Random Forest,13640.636639069266,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-4808.363360930734,4808.363360930734,23120358.210741106
+2025-10-01,P007,R04,18449,Seasonal Naive,15887.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-2562.0,2562.0,6563844.0
+2025-10-01,P008,R01,8286,Naive Forecast,7808.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-478.0,478.0,228484.0
+2025-10-01,P008,R01,8286,Random Forest,5319.198922979799,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-2966.801077020201,2966.801077020201,8801908.630608223
+2025-10-01,P008,R01,8286,Seasonal Naive,4110.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-4176.0,4176.0,17438976.0
+2025-10-01,P008,R02,11161,Naive Forecast,10313.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-848.0,848.0,719104.0
+2025-10-01,P008,R02,11161,Random Forest,10235.77814069264,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-925.2218593073594,925.2218593073594,856035.4889401671
+2025-10-01,P008,R02,11161,Seasonal Naive,14699.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,3538.0,3538.0,12517444.0
+2025-10-01,P008,R03,6211,Naive Forecast,1764.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-4447.0,4447.0,19775809.0
+2025-10-01,P008,R03,6211,Random Forest,6527.812308522947,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,316.8123085229472,316.8123085229472,100370.03883163909
+2025-10-01,P008,R03,6211,Seasonal Naive,4489.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-1722.0,1722.0,2965284.0
+2025-10-01,P008,R04,15618,Naive Forecast,7396.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-8222.0,8222.0,67601284.0
+2025-10-01,P008,R04,15618,Random Forest,12416.927566197686,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-3201.0724338023138,3201.0724338023138,10246864.726449069
+2025-10-01,P008,R04,15618,Seasonal Naive,9335.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-6283.0,6283.0,39476089.0
+2025-11-01,P001,R01,10025,Naive Forecast,5834.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-4191.0,4191.0,17564481.0
+2025-11-01,P001,R01,10025,Random Forest,10477.13700576906,Battery System,EV Component,North America,Final test / rolling one-month-ahead,452.1370057690601,452.1370057690601,204427.8719858111
+2025-11-01,P001,R01,10025,Seasonal Naive,18120.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,8095.0,8095.0,65529025.0
+2025-11-01,P001,R02,9580,Naive Forecast,11017.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,1437.0,1437.0,2064969.0
+2025-11-01,P001,R02,9580,Random Forest,12546.147339202464,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,2966.1473392024636,2966.1473392024636,8798030.037857855
+2025-11-01,P001,R02,9580,Seasonal Naive,8291.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-1289.0,1289.0,1661521.0
+2025-11-01,P001,R03,5193,Naive Forecast,8080.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,2887.0,2887.0,8334769.0
+2025-11-01,P001,R03,5193,Random Forest,10266.627694004528,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,5073.627694004528,5073.627694004528,25741697.977369707
+2025-11-01,P001,R03,5193,Seasonal Naive,6019.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,826.0,826.0,682276.0
+2025-11-01,P001,R04,11623,Naive Forecast,22560.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,10937.0,10937.0,119617969.0
+2025-11-01,P001,R04,11623,Random Forest,13615.762661378816,Battery System,EV Component,South America,Final test / rolling one-month-ahead,1992.7626613788161,1992.7626613788161,3971103.0245855823
+2025-11-01,P001,R04,11623,Seasonal Naive,14712.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,3089.0,3089.0,9541921.0
+2025-11-01,P002,R01,7555,Naive Forecast,6196.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-1359.0,1359.0,1846881.0
+2025-11-01,P002,R01,7555,Random Forest,6268.855147044061,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-1286.1448529559393,1286.1448529559393,1654168.5827850548
+2025-11-01,P002,R01,7555,Seasonal Naive,6345.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-1210.0,1210.0,1464100.0
+2025-11-01,P002,R02,6599,Naive Forecast,2473.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-4126.0,4126.0,17023876.0
+2025-11-01,P002,R02,6599,Random Forest,9027.369005375183,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,2428.3690053751834,2428.3690053751834,5896976.026266858
+2025-11-01,P002,R02,6599,Seasonal Naive,11365.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,4766.0,4766.0,22714756.0
+2025-11-01,P002,R03,3973,Naive Forecast,7424.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,3451.0,3451.0,11909401.0
+2025-11-01,P002,R03,3973,Random Forest,8590.588191491266,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,4617.588191491266,4617.588191491266,21322120.706199583
+2025-11-01,P002,R03,3973,Seasonal Naive,7146.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,3173.0,3173.0,10067929.0
+2025-11-01,P002,R04,11941,Naive Forecast,18955.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,7014.0,7014.0,49196196.0
+2025-11-01,P002,R04,11941,Random Forest,13886.222610036491,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,1945.2226100364915,1945.2226100364915,3783891.00259718
+2025-11-01,P002,R04,11941,Seasonal Naive,20301.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,8360.0,8360.0,69889600.0
+2025-11-01,P003,R01,10407,Naive Forecast,13679.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,3272.0,3272.0,10705984.0
+2025-11-01,P003,R01,10407,Random Forest,9885.258081950458,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-521.7419180495417,521.7419180495417,272214.6290500147
+2025-11-01,P003,R01,10407,Seasonal Naive,8489.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,-1918.0,1918.0,3678724.0
+2025-11-01,P003,R02,7785,Naive Forecast,20362.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,12577.0,12577.0,158180929.0
+2025-11-01,P003,R02,7785,Random Forest,14244.927537454374,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,6459.927537454374,6459.927537454374,41730663.78916133
+2025-11-01,P003,R02,7785,Seasonal Naive,7583.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-202.0,202.0,40804.0
+2025-11-01,P003,R03,6199,Naive Forecast,6281.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,82.0,82.0,6724.0
+2025-11-01,P003,R03,6199,Random Forest,6349.516867173373,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,150.5168671733727,150.5168671733727,22655.32730368672
+2025-11-01,P003,R03,6199,Seasonal Naive,11213.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,5014.0,5014.0,25140196.0
+2025-11-01,P003,R04,17350,Naive Forecast,26405.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,9055.0,9055.0,81993025.0
+2025-11-01,P003,R04,17350,Random Forest,16142.508454559336,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-1207.4915454406637,1207.4915454406637,1458035.8323106824
+2025-11-01,P003,R04,17350,Seasonal Naive,10627.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,-6723.0,6723.0,45198729.0
+2025-11-01,P004,R01,128,Naive Forecast,6971.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,6843.0,6843.0,46826649.0
+2025-11-01,P004,R01,128,Random Forest,7494.169250793364,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,7366.169250793364,7366.169250793364,54260449.43133367
+2025-11-01,P004,R01,128,Seasonal Naive,2878.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,2750.0,2750.0,7562500.0
+2025-11-01,P004,R02,3906,Naive Forecast,9976.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,6070.0,6070.0,36844900.0
+2025-11-01,P004,R02,3906,Random Forest,10648.082145965143,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,6742.082145965143,6742.082145965143,45455671.662941955
+2025-11-01,P004,R02,3906,Seasonal Naive,7128.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,3222.0,3222.0,10381284.0
+2025-11-01,P004,R03,6928,Naive Forecast,6061.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-867.0,867.0,751689.0
+2025-11-01,P004,R03,6928,Random Forest,5819.643728754495,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,-1108.356271245505,1108.356271245505,1228453.6240092395
+2025-11-01,P004,R03,6928,Seasonal Naive,6989.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,61.0,61.0,3721.0
+2025-11-01,P004,R04,5192,Naive Forecast,16810.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,11618.0,11618.0,134977924.0
+2025-11-01,P004,R04,5192,Random Forest,15127.290724205,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,9935.290724205,9935.290724205,98710001.77447392
+2025-11-01,P004,R04,5192,Seasonal Naive,13355.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,8163.0,8163.0,66634569.0
+2025-11-01,P005,R01,7060,Naive Forecast,7559.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,499.0,499.0,249001.0
+2025-11-01,P005,R01,7060,Random Forest,8467.15916342509,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,1407.1591634250908,1407.1591634250908,1980096.9112112015
+2025-11-01,P005,R01,7060,Seasonal Naive,12982.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,5922.0,5922.0,35070084.0
+2025-11-01,P005,R02,18078,Naive Forecast,9988.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-8090.0,8090.0,65448100.0
+2025-11-01,P005,R02,18078,Random Forest,9283.028221502782,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-8794.971778497218,8794.971778497218,77351528.58456253
+2025-11-01,P005,R02,18078,Seasonal Naive,11343.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-6735.0,6735.0,45360225.0
+2025-11-01,P005,R03,4876,Naive Forecast,8232.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,3356.0,3356.0,11262736.0
+2025-11-01,P005,R03,4876,Random Forest,5276.528489357864,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,400.5284893578637,400.5284893578637,160423.07078729232
+2025-11-01,P005,R03,4876,Seasonal Naive,1641.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-3235.0,3235.0,10465225.0
+2025-11-01,P005,R04,12639,Naive Forecast,10801.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-1838.0,1838.0,3378244.0
+2025-11-01,P005,R04,12639,Random Forest,12963.946264452858,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,324.9462644528576,324.9462644528576,105590.07478186645
+2025-11-01,P005,R04,12639,Seasonal Naive,11716.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,-923.0,923.0,851929.0
+2025-11-01,P006,R01,10487,Naive Forecast,5491.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-4996.0,4996.0,24960016.0
+2025-11-01,P006,R01,10487,Random Forest,5717.657118284496,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-4769.342881715504,4769.342881715504,22746631.523370344
+2025-11-01,P006,R01,10487,Seasonal Naive,5844.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,-4643.0,4643.0,21557449.0
+2025-11-01,P006,R02,8574,Naive Forecast,7239.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-1335.0,1335.0,1782225.0
+2025-11-01,P006,R02,8574,Random Forest,9063.35875628732,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,489.3587562873199,489.3587562873199,239471.99235507258
+2025-11-01,P006,R02,8574,Seasonal Naive,12631.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,4057.0,4057.0,16459249.0
+2025-11-01,P006,R03,5122,Naive Forecast,7036.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,1914.0,1914.0,3663396.0
+2025-11-01,P006,R03,5122,Random Forest,5134.335117909866,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,12.335117909866312,12.335117909866312,152.15513385030465
+2025-11-01,P006,R03,5122,Seasonal Naive,5022.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-100.0,100.0,10000.0
+2025-11-01,P006,R04,9967,Naive Forecast,12074.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,2107.0,2107.0,4439449.0
+2025-11-01,P006,R04,9967,Random Forest,12669.542663433784,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,2702.5426634337837,2702.5426634337837,7303736.84767977
+2025-11-01,P006,R04,9967,Seasonal Naive,14200.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,4233.0,4233.0,17918289.0
+2025-11-01,P007,R01,9025,Naive Forecast,7628.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-1397.0,1397.0,1951609.0
+2025-11-01,P007,R01,9025,Random Forest,8407.824071978837,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-617.1759280211627,617.1759280211627,380906.1261287834
+2025-11-01,P007,R01,9025,Seasonal Naive,10552.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,1527.0,1527.0,2331729.0
+2025-11-01,P007,R02,7355,Naive Forecast,7126.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-229.0,229.0,52441.0
+2025-11-01,P007,R02,7355,Random Forest,6446.382904167874,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-908.6170958321263,908.6170958321263,825585.0268384074
+2025-11-01,P007,R02,7355,Seasonal Naive,11004.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,3649.0,3649.0,13315201.0
+2025-11-01,P007,R03,10397,Naive Forecast,5512.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-4885.0,4885.0,23863225.0
+2025-11-01,P007,R03,10397,Random Forest,5736.339050324675,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-4660.660949675325,4660.660949675325,21721760.487828504
+2025-11-01,P007,R03,10397,Seasonal Naive,2712.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,-7685.0,7685.0,59059225.0
+2025-11-01,P007,R04,12290,Naive Forecast,18449.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,6159.0,6159.0,37933281.0
+2025-11-01,P007,R04,12290,Random Forest,16864.661535324438,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,4574.661535324438,4574.661535324438,20927528.162776943
+2025-11-01,P007,R04,12290,Seasonal Naive,16290.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,4000.0,4000.0,16000000.0
+2025-11-01,P008,R01,5416,Naive Forecast,8286.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,2870.0,2870.0,8236900.0
+2025-11-01,P008,R01,5416,Random Forest,6833.933951687264,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,1417.9339516872642,1417.9339516872642,2010536.691347461
+2025-11-01,P008,R01,5416,Seasonal Naive,9638.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,4222.0,4222.0,17825284.0
+2025-11-01,P008,R02,7939,Naive Forecast,11161.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,3222.0,3222.0,10381284.0
+2025-11-01,P008,R02,7939,Random Forest,10760.90525408119,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,2821.90525408119,2821.90525408119,7963149.263011025
+2025-11-01,P008,R02,7939,Seasonal Naive,4484.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,-3455.0,3455.0,11937025.0
+2025-11-01,P008,R03,845,Naive Forecast,6211.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,5366.0,5366.0,28793956.0
+2025-11-01,P008,R03,845,Random Forest,5655.849529743134,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,4810.849529743134,4810.849529743134,23144273.19782973
+2025-11-01,P008,R03,845,Seasonal Naive,3071.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,2226.0,2226.0,4955076.0
+2025-11-01,P008,R04,16208,Naive Forecast,15618.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-590.0,590.0,348100.0
+2025-11-01,P008,R04,16208,Random Forest,15661.574112705392,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-546.4258872946084,546.4258872946084,298581.25030570006
+2025-11-01,P008,R04,16208,Seasonal Naive,11955.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,-4253.0,4253.0,18088009.0
+2025-12-01,P001,R01,12233,Naive Forecast,10025.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-2208.0,2208.0,4875264.0
+2025-12-01,P001,R01,12233,Random Forest,8268.225196016874,Battery System,EV Component,North America,Final test / rolling one-month-ahead,-3964.774803983126,3964.774803983126,15719439.246299434
+2025-12-01,P001,R01,12233,Seasonal Naive,12568.0,Battery System,EV Component,North America,Final test / rolling one-month-ahead,335.0,335.0,112225.0
+2025-12-01,P001,R02,15907,Naive Forecast,9580.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-6327.0,6327.0,40030929.0
+2025-12-01,P001,R02,15907,Random Forest,14461.72431439394,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,-1445.2756856060605,1445.2756856060605,2088821.8074040683
+2025-12-01,P001,R02,15907,Seasonal Naive,17105.0,Battery System,EV Component,Europe,Final test / rolling one-month-ahead,1198.0,1198.0,1435204.0
+2025-12-01,P001,R03,5702,Naive Forecast,5193.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-509.0,509.0,259081.0
+2025-12-01,P001,R03,5702,Random Forest,7556.995164058795,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,1854.9951640587951,1854.9951640587951,3441007.0586815164
+2025-12-01,P001,R03,5702,Seasonal Naive,4727.0,Battery System,EV Component,Asia,Final test / rolling one-month-ahead,-975.0,975.0,950625.0
+2025-12-01,P001,R04,24643,Naive Forecast,11623.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-13020.0,13020.0,169520400.0
+2025-12-01,P001,R04,24643,Random Forest,12859.879229199898,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-11783.120770800102,11783.120770800102,138841935.09926078
+2025-12-01,P001,R04,24643,Seasonal Naive,15235.0,Battery System,EV Component,South America,Final test / rolling one-month-ahead,-9408.0,9408.0,88510464.0
+2025-12-01,P002,R01,7702,Naive Forecast,7555.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-147.0,147.0,21609.0
+2025-12-01,P002,R01,7702,Random Forest,6902.619443295013,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,-799.3805567049867,799.3805567049867,639009.2744379744
+2025-12-01,P002,R01,7702,Seasonal Naive,13718.0,Powertrain,Automotive Component,North America,Final test / rolling one-month-ahead,6016.0,6016.0,36192256.0
+2025-12-01,P002,R02,10468,Naive Forecast,6599.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-3869.0,3869.0,14969161.0
+2025-12-01,P002,R02,10468,Random Forest,6868.161093417606,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,-3599.838906582394,3599.838906582394,12958840.153344326
+2025-12-01,P002,R02,10468,Seasonal Naive,10879.0,Powertrain,Automotive Component,Europe,Final test / rolling one-month-ahead,411.0,411.0,168921.0
+2025-12-01,P002,R03,8411,Naive Forecast,3973.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-4438.0,4438.0,19695844.0
+2025-12-01,P002,R03,8411,Random Forest,7393.088746706453,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,-1017.9112532935469,1017.9112532935469,1036143.3195816394
+2025-12-01,P002,R03,8411,Seasonal Naive,13454.0,Powertrain,Automotive Component,Asia,Final test / rolling one-month-ahead,5043.0,5043.0,25431849.0
+2025-12-01,P002,R04,13483,Naive Forecast,11941.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-1542.0,1542.0,2377764.0
+2025-12-01,P002,R04,13483,Random Forest,13496.78889360003,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,13.78889360003086,13.78889360003086,190.13358671297203
+2025-12-01,P002,R04,13483,Seasonal Naive,9995.0,Powertrain,Automotive Component,South America,Final test / rolling one-month-ahead,-3488.0,3488.0,12166144.0
+2025-12-01,P003,R01,9317,Naive Forecast,10407.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,1090.0,1090.0,1188100.0
+2025-12-01,P003,R01,9317,Random Forest,10179.07536517649,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,862.0753651764899,862.0753651764899,743173.9352441784
+2025-12-01,P003,R01,9317,Seasonal Naive,10437.0,Motor Component,EV Component,North America,Final test / rolling one-month-ahead,1120.0,1120.0,1254400.0
+2025-12-01,P003,R02,10879,Naive Forecast,7785.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,-3094.0,3094.0,9572836.0
+2025-12-01,P003,R02,10879,Random Forest,12706.63508892496,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,1827.6350889249607,1827.6350889249607,3340250.018269749
+2025-12-01,P003,R02,10879,Seasonal Naive,15439.0,Motor Component,EV Component,Europe,Final test / rolling one-month-ahead,4560.0,4560.0,20793600.0
+2025-12-01,P003,R03,7006,Naive Forecast,6199.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,-807.0,807.0,651249.0
+2025-12-01,P003,R03,7006,Random Forest,7292.205698573346,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,286.2056985733461,286.2056985733461,81913.70189585706
+2025-12-01,P003,R03,7006,Seasonal Naive,7723.0,Motor Component,EV Component,Asia,Final test / rolling one-month-ahead,717.0,717.0,514089.0
+2025-12-01,P003,R04,11942,Naive Forecast,17350.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,5408.0,5408.0,29246464.0
+2025-12-01,P003,R04,11942,Random Forest,16477.59114936453,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,4535.591149364529,4535.591149364529,20571587.07419385
+2025-12-01,P003,R04,11942,Seasonal Naive,26700.0,Motor Component,EV Component,South America,Final test / rolling one-month-ahead,14758.0,14758.0,217798564.0
+2025-12-01,P004,R01,1658,Naive Forecast,128.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,-1530.0,1530.0,2340900.0
+2025-12-01,P004,R01,1658,Random Forest,5101.908082070705,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,3443.908082070705,3443.908082070705,11860502.877751922
+2025-12-01,P004,R01,1658,Seasonal Naive,3566.0,Electronic Module,Automotive Component,North America,Final test / rolling one-month-ahead,1908.0,1908.0,3640464.0
+2025-12-01,P004,R02,9544,Naive Forecast,3906.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-5638.0,5638.0,31787044.0
+2025-12-01,P004,R02,9544,Random Forest,8361.102006193963,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-1182.8979938060365,1182.8979938060365,1399247.663750346
+2025-12-01,P004,R02,9544,Seasonal Naive,2731.0,Electronic Module,Automotive Component,Europe,Final test / rolling one-month-ahead,-6813.0,6813.0,46416969.0
+2025-12-01,P004,R03,2797,Naive Forecast,6928.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,4131.0,4131.0,17065161.0
+2025-12-01,P004,R03,2797,Random Forest,4986.383088758465,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,2189.3830887584654,2189.3830887584654,4793398.309341558
+2025-12-01,P004,R03,2797,Seasonal Naive,5561.0,Electronic Module,Automotive Component,Asia,Final test / rolling one-month-ahead,2764.0,2764.0,7639696.0
+2025-12-01,P004,R04,18632,Naive Forecast,5192.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-13440.0,13440.0,180633600.0
+2025-12-01,P004,R04,18632,Random Forest,8521.322747724045,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-10110.677252275955,10110.677252275955,102225794.49969044
+2025-12-01,P004,R04,18632,Seasonal Naive,12686.0,Electronic Module,Automotive Component,South America,Final test / rolling one-month-ahead,-5946.0,5946.0,35354916.0
+2025-12-01,P005,R01,4217,Naive Forecast,7060.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,2843.0,2843.0,8082649.0
+2025-12-01,P005,R01,4217,Random Forest,7928.398816088697,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,3711.3988160886965,3711.3988160886965,13774481.172064578
+2025-12-01,P005,R01,4217,Seasonal Naive,7906.0,Sensor,Automotive Component,North America,Final test / rolling one-month-ahead,3689.0,3689.0,13608721.0
+2025-12-01,P005,R02,7417,Naive Forecast,18078.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,10661.0,10661.0,113656921.0
+2025-12-01,P005,R02,7417,Random Forest,11540.723811632814,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,4123.7238116328135,4123.7238116328135,17005098.07462746
+2025-12-01,P005,R02,7417,Seasonal Naive,6525.0,Sensor,Automotive Component,Europe,Final test / rolling one-month-ahead,-892.0,892.0,795664.0
+2025-12-01,P005,R03,5506,Naive Forecast,4876.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-630.0,630.0,396900.0
+2025-12-01,P005,R03,5506,Random Forest,6488.4516240565,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,982.4516240564999,982.4516240564999,965211.1936112542
+2025-12-01,P005,R03,5506,Seasonal Naive,4602.0,Sensor,Automotive Component,Asia,Final test / rolling one-month-ahead,-904.0,904.0,817216.0
+2025-12-01,P005,R04,3264,Naive Forecast,12639.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,9375.0,9375.0,87890625.0
+2025-12-01,P005,R04,3264,Random Forest,15367.662602383723,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,12103.662602383723,12103.662602383723,146498648.39234233
+2025-12-01,P005,R04,3264,Seasonal Naive,10481.0,Sensor,Automotive Component,South America,Final test / rolling one-month-ahead,7217.0,7217.0,52085089.0
+2025-12-01,P006,R01,6951,Naive Forecast,10487.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,3536.0,3536.0,12503296.0
+2025-12-01,P006,R01,6951,Random Forest,8324.40905917693,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,1373.409059176931,1373.409059176931,1886252.4438292624
+2025-12-01,P006,R01,6951,Seasonal Naive,7954.0,Brake System,Automotive Component,North America,Final test / rolling one-month-ahead,1003.0,1003.0,1006009.0
+2025-12-01,P006,R02,11575,Naive Forecast,8574.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-3001.0,3001.0,9006001.0
+2025-12-01,P006,R02,11575,Random Forest,8767.196868983277,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-2807.8031310167225,2807.8031310167225,7883758.422547311
+2025-12-01,P006,R02,11575,Seasonal Naive,1955.0,Brake System,Automotive Component,Europe,Final test / rolling one-month-ahead,-9620.0,9620.0,92544400.0
+2025-12-01,P006,R03,5429,Naive Forecast,5122.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,-307.0,307.0,94249.0
+2025-12-01,P006,R03,5429,Random Forest,6021.4286735903,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,592.4286735902997,592.4286735902997,350971.73329196183
+2025-12-01,P006,R03,5429,Seasonal Naive,8677.0,Brake System,Automotive Component,Asia,Final test / rolling one-month-ahead,3248.0,3248.0,10549504.0
+2025-12-01,P006,R04,13409,Naive Forecast,9967.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-3442.0,3442.0,11847364.0
+2025-12-01,P006,R04,13409,Random Forest,10446.038156246532,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-2962.961843753468,2962.961843753468,8779142.88753895
+2025-12-01,P006,R04,13409,Seasonal Naive,9248.0,Brake System,Automotive Component,South America,Final test / rolling one-month-ahead,-4161.0,4161.0,17313921.0
+2025-12-01,P007,R01,9629,Naive Forecast,9025.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-604.0,604.0,364816.0
+2025-12-01,P007,R01,9629,Random Forest,8813.292262129895,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-815.7077378701051,815.7077378701051,665379.1136211641
+2025-12-01,P007,R01,9629,Seasonal Naive,6498.0,Transmission,Automotive Component,North America,Final test / rolling one-month-ahead,-3131.0,3131.0,9803161.0
+2025-12-01,P007,R02,17343,Naive Forecast,7355.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-9988.0,9988.0,99760144.0
+2025-12-01,P007,R02,17343,Random Forest,6621.68119220594,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-10721.318807794061,10721.318807794061,114946676.97835867
+2025-12-01,P007,R02,17343,Seasonal Naive,10472.0,Transmission,Automotive Component,Europe,Final test / rolling one-month-ahead,-6871.0,6871.0,47210641.0
+2025-12-01,P007,R03,1614,Naive Forecast,10397.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,8783.0,8783.0,77141089.0
+2025-12-01,P007,R03,1614,Random Forest,7988.126182450946,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,6374.126182450946,6374.126182450946,40629484.58980667
+2025-12-01,P007,R03,1614,Seasonal Naive,5834.0,Transmission,Automotive Component,Asia,Final test / rolling one-month-ahead,4220.0,4220.0,17808400.0
+2025-12-01,P007,R04,15045,Naive Forecast,12290.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-2755.0,2755.0,7590025.0
+2025-12-01,P007,R04,15045,Random Forest,11962.485099206346,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-3082.5149007936543,3082.5149007936543,9501898.113614913
+2025-12-01,P007,R04,15045,Seasonal Naive,11259.0,Transmission,Automotive Component,South America,Final test / rolling one-month-ahead,-3786.0,3786.0,14333796.0
+2025-12-01,P008,R01,10155,Naive Forecast,5416.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-4739.0,4739.0,22458121.0
+2025-12-01,P008,R01,10155,Random Forest,6072.042483974427,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-4082.9575160255727,4082.9575160255727,16670542.077669714
+2025-12-01,P008,R01,10155,Seasonal Naive,8546.0,Control Unit,Automotive Component,North America,Final test / rolling one-month-ahead,-1609.0,1609.0,2588881.0
+2025-12-01,P008,R02,5950,Naive Forecast,7939.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,1989.0,1989.0,3956121.0
+2025-12-01,P008,R02,5950,Random Forest,9029.178022437833,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,3079.1780224378326,3079.1780224378326,9481337.29386416
+2025-12-01,P008,R02,5950,Seasonal Naive,11938.0,Control Unit,Automotive Component,Europe,Final test / rolling one-month-ahead,5988.0,5988.0,35856144.0
+2025-12-01,P008,R03,6157,Naive Forecast,845.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-5312.0,5312.0,28217344.0
+2025-12-01,P008,R03,6157,Random Forest,5203.575445818072,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,-953.4245541819282,953.4245541819282,909018.3805170086
+2025-12-01,P008,R03,6157,Seasonal Naive,8840.0,Control Unit,Automotive Component,Asia,Final test / rolling one-month-ahead,2683.0,2683.0,7198489.0
+2025-12-01,P008,R04,12527,Naive Forecast,16208.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,3681.0,3681.0,13549761.0
+2025-12-01,P008,R04,12527,Random Forest,12743.44196421144,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,216.4419642114408,216.4419642114408,46847.123871706615
+2025-12-01,P008,R04,12527,Seasonal Naive,21525.0,Control Unit,Automotive Component,South America,Final test / rolling one-month-ahead,8998.0,8998.0,80964004.0

@@ -1,0 +1,57 @@
+table customers
+	lineageTag: 0c42b282-9c11-4400-a5d5-4e65d793d0f2
+
+	column Customer_ID
+		dataType: string
+		lineageTag: 552fc716-e333-467f-9236-9eb32023a1d7
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_Name
+		dataType: string
+		lineageTag: 83f8a5b9-05b7-4ea2-a3d8-40a3e74e0a12
+		summarizeBy: none
+		sourceColumn: Customer_Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Customer_Type
+		dataType: string
+		lineageTag: 2693f7ed-bfd7-4453-947b-590ca2b258c1
+		summarizeBy: none
+		sourceColumn: Customer_Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Industry
+		dataType: string
+		lineageTag: 896cac63-9b3e-4c95-a438-24dcf81ba6c2
+		summarizeBy: none
+		sourceColumn: Industry
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region_ID
+		dataType: string
+		lineageTag: e833d250-c593-42a4-95c8-8ff1eb6b40f9
+		summarizeBy: none
+		sourceColumn: Region_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	partition customers = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/raw/customers.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"Customer_ID", type text}, {"Customer_Name", type text}, {"Customer_Type", type text}, {"Industry", type text}, {"Region_ID", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

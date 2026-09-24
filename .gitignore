@@ -1,0 +1,16 @@
+# Python environments and caches
+.venv/
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+# Regenerable database
+outputs/database/
+*.duckdb.wal
+# Power BI local cache and settings
+**/.pbi/
+**/localSettings.json
+*.abf
+# Local editor and OS files
+.vscode/
+.DS_Store
+Thumbs.db

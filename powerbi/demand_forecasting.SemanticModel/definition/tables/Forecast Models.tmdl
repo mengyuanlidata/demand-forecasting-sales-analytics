@@ -1,0 +1,22 @@
+/// Disconnected comparison rows. Does not duplicate demand observations.
+table 'Forecast Models'
+	lineageTag: d08bb5d7-994a-4395-8e50-b215c2398224
+
+	column Model
+		dataType: string
+		lineageTag: af05bcb0-ddd4-4506-8148-bca94b017434
+		summarizeBy: none
+		sourceColumn: [Model]
+		sortByColumn: Sort
+
+	column Sort
+		dataType: int64
+		isHidden
+		lineageTag: 74aeb535-45c6-4c08-9ca8-a69faae245a1
+		summarizeBy: none
+		sourceColumn: [Sort]
+
+	partition 'Forecast Models' = calculated
+		mode: import
+		source = DATATABLE("Model", STRING, "Sort", INTEGER, {{"Random Forest", 1}, {"Naive Forecast", 2}, {"Seasonal Naive", 3}})
+

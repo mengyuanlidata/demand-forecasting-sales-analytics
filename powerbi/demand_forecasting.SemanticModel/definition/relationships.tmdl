@@ -1,0 +1,28 @@
+relationship 87d507ac-6928-2ebb-3657-ec8de62fc2e7
+	fromColumn: customers.Region_ID
+	toColumn: regions.Region_ID
+
+relationship 7e2c2b44-d648-ef95-1ff0-bdd79f6a2eb0
+	fromColumn: sales_orders.Customer_ID
+	toColumn: customers.Customer_ID
+
+relationship 44bfbdbd-4dc1-95f7-97f9-c77bb40a7104
+	fromColumn: sales_orders.Product_ID
+	toColumn: products.Product_ID
+
+relationship 8ace7391-10e3-723a-a249-1b97e96a6cf5
+	fromColumn: demand_forecast.Product_ID
+	toColumn: products.Product_ID
+
+relationship 49f40c27-31e2-db11-71ad-99b36dd02475
+	fromColumn: demand_forecast.Region_ID
+	toColumn: regions.Region_ID
+
+relationship 69057a33-5c13-8b04-1b8f-b7a2ab763599
+	fromColumn: sales_orders.Order_Date
+	toColumn: Calendar.Date
+
+relationship 4503d8df-3bb5-8eee-bcaa-5d95ec631275
+	fromColumn: demand_forecast.Month
+	toColumn: Calendar.Date
+

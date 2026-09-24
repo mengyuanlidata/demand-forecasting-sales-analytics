@@ -1,0 +1,98 @@
+/// Frozen final-test forecasts, July-December 2025, one row per month/product/region. Table name retained to preserve report bindings.
+table demand_forecast
+	lineageTag: 23fa4192-bba0-4b2e-b524-55d6c3d8594d
+
+	column Month
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: f488ffe8-71d7-491a-9e3d-831cb287e168
+		summarizeBy: none
+		sourceColumn: Month
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column Product_ID
+		dataType: string
+		lineageTag: aec9b504-46ef-4573-add0-d0073b5da554
+		summarizeBy: none
+		sourceColumn: Product_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region_ID
+		dataType: string
+		lineageTag: 1064829e-4c6b-477d-8785-48e29f352d72
+		summarizeBy: none
+		sourceColumn: Region_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Actual_Demand
+		dataType: int64
+		formatString: 0
+		lineageTag: 90ec6128-e407-49cc-a829-6d04cbecd0d0
+		summarizeBy: sum
+		sourceColumn: Actual_Demand
+
+		annotation SummarizationSetBy = Automatic
+
+	column Forecast_Demand
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 4aac3b76-824b-488a-bf00-eb0e78f2c7f4
+		summarizeBy: sum
+		sourceColumn: Forecast_Demand
+
+		annotation SummarizationSetBy = Automatic
+
+	column Naive_Forecast
+		dataType: double
+		formatString: #,0.00
+		lineageTag: a08f0e7a-533c-48f6-b372-53fa683e4dd6
+		summarizeBy: sum
+		sourceColumn: Naive_Forecast
+
+	column Seasonal_Naive_Forecast
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 6c5e04ec-94e9-4a31-8178-c5b85bfd0cc7
+		summarizeBy: sum
+		sourceColumn: Seasonal_Naive_Forecast
+
+	column Forecast_Error
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 5d2b6e1d-b89f-4648-89b9-df99db8ff351
+		summarizeBy: sum
+		sourceColumn: Forecast_Error
+
+	column Absolute_Error
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 61e72c1a-3ea4-4d55-accb-bf220bb41822
+		summarizeBy: sum
+		sourceColumn: Absolute_Error
+
+	column Squared_Error
+		dataType: double
+		formatString: #,0.00
+		lineageTag: 8d30191e-8c0c-4ba5-a69b-7e69e09be38a
+		summarizeBy: sum
+		sourceColumn: Squared_Error
+
+	partition demand_forecast = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/outputs/forecasts/model_forecast_results.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"Month", type date}, {"Product_ID", type text}, {"Region_ID", type text}, {"Actual_Demand", Int64.Type}, {"Forecast_Demand", type number}, {"Naive_Forecast", type number}, {"Seasonal_Naive_Forecast", type number}, {"Forecast_Error", type number}, {"Absolute_Error", type number}, {"Squared_Error", type number}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

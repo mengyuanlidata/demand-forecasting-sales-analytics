@@ -1,0 +1,6 @@
+﻿Product_ID,Product_Category,Region_ID,Region,observation_count,mae,wape_pct,mean_bias,overforecast_count,underforecast_count,review_reason
+P006,Brake System,R04,South America,6,4069.0450203519963,42.21292987432046,3081.3910724341745,5,1,Overforecast in at least 5 of 6 months
+P004,Electronic Module,R03,Asia,6,3116.8948574041156,79.44169382959387,2747.442766988947,5,1,Overforecast in at least 5 of 6 months
+P004,Electronic Module,R02,Europe,6,2960.6567252257296,31.723021503570507,-713.296009904015,1,5,Underforecast in at least 5 of 6 months
+P007,Transmission,R01,North America,6,1801.145687334193,21.851492486260835,-1586.0208171488239,1,5,Underforecast in at least 5 of 6 months
+P005,Sensor,R03,Asia,6,1282.453941854443,26.39427726520995,955.6483606301103,5,1,Overforecast in at least 5 of 6 months

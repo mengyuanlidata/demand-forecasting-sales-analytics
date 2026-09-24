@@ -1,0 +1,93 @@
+table Calendar
+	lineageTag: f58db5b2-eab7-4b34-8ed6-c3357611f543
+	dataCategory: Time
+
+	column Date
+		isKey
+		formatString: General Date
+		lineageTag: 964c3d73-8882-49af-83a8-9c33298ff4f7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Date]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Year
+		formatString: 0
+		lineageTag: a5e12741-7775-47e6-9b40-82f5ae7998f4
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year]
+
+		annotation SummarizationSetBy = User
+
+	column 'Month Number'
+		formatString: 0
+		lineageTag: e044b032-c162-4ab5-9f83-9334c15f0dd7
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month Number]
+
+		annotation SummarizationSetBy = User
+
+	column Month
+		lineageTag: a5db878d-adf2-4261-bf03-7558104688be
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Month]
+		sortByColumn: 'Month Number'
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Year Month'
+		lineageTag: 23871315-c8ab-4b81-9983-ea2b19b7a142
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Year Month]
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quarter
+		lineageTag: 5aacdd5a-766e-467f-8b71-f5895dffd776
+		summarizeBy: none
+		isNameInferred
+		sourceColumn: [Quarter]
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Month Start' =
+			
+			DATE(
+			    Calendar[Year],
+			    Calendar[Month Number],
+			    1
+			)
+		dataType: dateTime
+		formatString: yyyy.m
+		lineageTag: 295cd072-0790-4e6e-86f3-2f954d3b570d
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	partition Calendar = calculated
+		mode: import
+		source =
+				
+				ADDCOLUMNS(
+				    CALENDAR(
+				        MIN(sales_orders[Order_Date]),
+				        MAX(sales_orders[Order_Date])
+				    ),
+				    "Year", YEAR([Date]),
+				    "Month Number", MONTH([Date]),
+				    "Month", FORMAT([Date], "MMM"),
+				    "Year Month", FORMAT([Date], "YYYY-MM"),
+				    "Quarter", "Q" & FORMAT([Date], "Q")
+				)
+
+	annotation PBI_Id = 964220529c294817854cd38026861d6a
+

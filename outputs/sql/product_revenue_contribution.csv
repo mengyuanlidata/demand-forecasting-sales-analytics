@@ -1,0 +1,9 @@
+﻿Product_ID,Product_Category,Product_Line,total_revenue,total_units_sold,total_orders,average_selling_price,revenue_contribution_pct,cumulative_revenue,cumulative_revenue_pct,revenue_rank
+P003,Motor Component,EV Component,400354232.96,1536819.0,1459,260.51,14.93,400354232.96,14.93,1
+P001,Battery System,EV Component,379327190.17,1456949.0,1419,260.36,14.15,779681423.13,29.08,2
+P005,Sensor,Automotive Component,329627115.01,1275791.0,1224,258.37,12.3,1109308538.14,41.38,3
+P008,Control Unit,Automotive Component,322937964.58,1276787.0,1215,252.93,12.05,1432246502.72,53.42,4
+P002,Powertrain,Automotive Component,317786474.47,1244035.0,1208,255.45,11.85,1750032977.19,65.28,5
+P007,Transmission,Automotive Component,317176245.72,1178797.0,1139,269.07,11.83,2067209222.91,77.11,6
+P004,Electronic Module,Automotive Component,306904988.56,1168526.0,1148,262.64,11.45,2374114211.47,88.55,7
+P006,Brake System,Automotive Component,306862836.16,1198414.0,1188,256.06,11.45,2680977047.63,100.0,8

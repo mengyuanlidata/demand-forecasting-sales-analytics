@@ -1,0 +1,111 @@
+table sales_orders
+	lineageTag: 869b8c88-e930-4915-bf93-e7a52f22adae
+
+	column Order_ID
+		dataType: string
+		lineageTag: e581d1c1-78a4-4b3e-9e98-54ef728d9e84
+		summarizeBy: none
+		sourceColumn: Order_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order_Date
+		dataType: dateTime
+		formatString: yyyy/m/d
+		lineageTag: d140f678-829a-4845-bf2d-5fe0f56e9bdd
+		summarizeBy: none
+		sourceColumn: Order_Date
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column Customer_ID
+		dataType: string
+		lineageTag: ba5eaa45-dc61-48e7-a238-6c5d034df739
+		summarizeBy: none
+		sourceColumn: Customer_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Product_ID
+		dataType: string
+		lineageTag: 7023b4ed-f1ac-4ed3-9438-825fa1cf2e16
+		summarizeBy: none
+		sourceColumn: Product_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region_ID
+		dataType: string
+		lineageTag: 9fe3b747-0ca5-4caf-9e2e-7521a9f15da6
+		summarizeBy: none
+		sourceColumn: Region_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Quantity
+		dataType: int64
+		formatString: 0
+		lineageTag: b235d21a-98cd-4ea9-bf21-e3ee37dcdbcc
+		summarizeBy: sum
+		sourceColumn: Quantity
+
+		annotation SummarizationSetBy = Automatic
+
+	column Unit_Price
+		dataType: double
+		lineageTag: 4d8e98c2-297b-415b-90e1-64e779204a37
+		summarizeBy: sum
+		sourceColumn: Unit_Price
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Revenue
+		dataType: double
+		isHidden
+		lineageTag: 28febff7-3028-4899-ab59-d40ebab48f7e
+		summarizeBy: sum
+		sourceColumn: Revenue
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column Delivery_Days
+		dataType: int64
+		formatString: 0
+		lineageTag: 1debee98-749e-4def-bc11-999f69d59bc3
+		summarizeBy: sum
+		sourceColumn: Delivery_Days
+
+		annotation SummarizationSetBy = Automatic
+
+	column Order_Status
+		dataType: string
+		lineageTag: f65f77be-ff17-46fe-b107-3fa941310d95
+		summarizeBy: none
+		sourceColumn: Order_Status
+
+		annotation SummarizationSetBy = Automatic
+
+	partition sales_orders = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(ProjectRoot & "/data/raw/sales_orders.csv"), [Delimiter=",", Encoding=65001, QuoteStyle=QuoteStyle.Csv]),
+				    Headers = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+				    Typed = Table.TransformColumnTypes(Headers, {{"Order_ID", type text}, {"Order_Date", type date}, {"Customer_ID", type text}, {"Product_ID", type text}, {"Region_ID", type text}, {"Quantity", Int64.Type}, {"Unit_Price", type number}, {"Revenue", type number}, {"Delivery_Days", Int64.Type}, {"Order_Status", type text}}, "en-US")
+				in
+				    Typed
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Table
+

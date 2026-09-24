@@ -1,0 +1,5 @@
+﻿Region_ID,Region,total_orders,on_time_orders,delayed_orders,ordered_units,on_time_units,average_delivery_days,delayed_revenue,on_time_order_rate_pct,delayed_order_rate_pct,on_time_unit_rate_pct,fulfillment_risk_rank
+R03,Asia,1575,1385,190,1636356.0,1448780.0,16.05,46217678.66,87.94,12.06,88.54,1
+R04,South America,3848,3430,418,3925218.0,3494849.0,16.14,118169429.52,89.14,10.86,89.04,2
+R02,Europe,2592,2311,281,2696384.0,2393428.0,16.24,79622579.52,89.16,10.84,88.76,3
+R01,North America,1985,1779,206,2078160.0,1862438.0,15.95,53657726.0,89.62,10.38,89.62,4
